@@ -25,7 +25,8 @@ SECRET_KEY = '40gh0p9u1vu2g66z^!^xl9cdm7g5o-7k2cm66kj)sg+1fxe06s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -119,6 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+EMAIL_HOST = '' #Aqui irá a origem do email pra onde será enviado as mensagens
+EMAIL_HOST_USER = '' #Aqui estará o email do cliente
+EMAIL_HOST_PASSWORD = '' #Aqui é a senha desse email
+EMAIL_PORT = 587 
+EMAIL_USE_TLS = True
