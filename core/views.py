@@ -16,12 +16,12 @@ def index(request):
         
         if form.is_valid():
             # coloca cada dado em sua devida variável
-            name = form.cleaned_data['']
-            phone = form.cleaned_data['']
-            email = form.cleaned_data['']
-            subject = form.cleaned_data['']
-            meet = form.cleaned_data['']
-            message = form.cleaned_data['']
+            name = form.cleaned_data['nameContato']
+            phone = form.cleaned_data['emailContato']
+            email = form.cleaned_data['phoneContato']
+            subject = form.cleaned_data['subjectContato']
+            meet = form.cleaned_data['meetContato']
+            message = form.cleaned_data['messageContato']
 
             # Gera o corpo do Email como uma string
             entiremail = ''.format(nameContato, emailContato, phoneContato, subjectContato, messageContato, meetContato)   
