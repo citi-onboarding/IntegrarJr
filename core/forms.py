@@ -8,4 +8,4 @@ class Contato(forms.Form):
     phoneContato = forms.CharField()
     subjectContato = forms.CharField()
     messageContato = forms.CharField()
-    meetContato = forms.Choicefield()  
+    meetContato = forms.ChoiceField()  
