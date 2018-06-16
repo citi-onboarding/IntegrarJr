@@ -1,6 +1,18 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Empresa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+<!import das fontes>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+<!import dos icones>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +21,47 @@
     <link rel="stylesheet" href={% static "css\style.css" %}>
 </head>
 <body>
-    <nav id="navbar"></nav>
-    <div class="carrossel"></div>
-    <div class="MVV"></div>
-    <div class="Serviços"></div>
-    <div class="Contato">
+    <nav class="navbar navbar_colored" id="idNavbar">
+    	<div class="adress adress_colored">
+            <div class="adress__text">
+                <p>RUA DOM MANUEL DE MEDEIROS, S/N, DOIS IRMÃOS | (81) 9 9231-8901</p>
+            </div>
+        </div>
+        <div class="navbar-menu">
+        	<div class="navbar-logo">
+            	<img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
+        	</div>
+        	<div class="navbar-collapse">
+            	<ul class="navbar-buttons">
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idHome">Home</a>
+                	</li>
+            	    <li>
+                	    <a class="navbar-buttons__link" href="#idQuemSomos">Institucional</a>
+	                </li>
+    	            <li>
+        	            <a class="navbar-buttons__link" href="#idServicos">Serviços</a>
+            	    </li>
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idContato">Contato</a>
+                	</li>
+            	</ul>
+       		</div>
+			<div class="navbar-hamburger navbar_responsive">
+				<div class="navbar-hamburger-box">
+					<a href="javascript:void(0);" class="navbar-hamburger-icon" onclick="navResponsive(), iconEffect(this)">
+						<div class="navbar-hamburger__bar bar1"></div>
+ 						<div class="navbar-hamburger__bar bar2"></div>
+ 						<div class="navbar-hamburger__bar bar3"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+    </nav>
+    <div class="carrossel" id="idCarrossel"></div>
+    <div class="MVV" id="idInstitucional"></div>
+    <div class="Serviços" id="idServicos"></div>
+    <div class="Contato" id="idContato">
         <h4>CONTATO</h4>
         <form action="" method = "POST">
             <div id="contato-1">
@@ -33,7 +81,7 @@
     <footer class="footer">
         <span class="footer-flex">
             <div class="footer-son" id="footer-logo">
-                <img src={% static "\images\integrar.jpg" %} width="100px" height="100px"></img>
+                <img src={% static "images\logo.png" %} width="100px" height="100px"></img>
             </div>
             <div class="footer-son" id="footer-dados">
                 <h5>DADOS</h5>
@@ -57,5 +105,9 @@
             <img src={% static "icons\valentines-heart.png" %}></img></h6>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src={% static "js\scroll-navigation.js" %}></script>
+	<script src={% static "js\main.js" %}></script>
 </body> 
 </html>
