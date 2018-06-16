@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,18 +6,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\style.css">
+    <link rel="stylesheet" href={% static "css\style.css" %}>
 </head>
 <body>
     <nav id="navbar"></nav>
     <div class="carrossel"></div>
     <div class="MVV"></div>
     <div class="Serviços"></div>
-    <div class="Contato"></div>
+    <div class="Contato">
+        <h4>CONTATO</h4>
+        <form action="" method = "POST">
+            <div id="contato-1">
+            <input class="campo" type="text" name="nome" placeholder="Nome e sobrenome"><br>
+            <input class="campo" type="email" name="email" placeholder="Email"><br>
+            <input class="campo" type="text" name="telefone" placeholder="Telefone"><br>            
+            <input class="campo" type="text" name="conheceu" placeholder="Como você nos conheceu"><br>
+           
+            </div>  
+            <div id="contato-2">
+                <input class="campo" type="text" name="Assunto" placeholder="Assunto"><br>            
+                <textarea class="campo" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <button class="campo" id="button" type="submit" style="margin-top:5px ;">Enviar</button>
+            </div>
+        </form>
+    </div>
     <footer class="footer">
         <span class="footer-flex">
             <div class="footer-son" id="footer-logo">
-                <img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\integrar.jpg" width="100px" height="100px"></img>
+                <img src={% static "\images\integrar.jpg" %} width="100px" height="100px"></img>
             </div>
             <div class="footer-son" id="footer-dados">
                 <h5>DADOS</h5>
@@ -29,15 +46,15 @@
                 <p>Seg - Sex 08:00 às 18:00</p>
             </addres>
             <div class="footer-son" id="footer-redes-sociais">
-                <img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\twitter.png"></img>
-                <img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\facebook.png"></img>
-                <img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\instagram.png"></img>            
+                <img src={% static "icons\twitter.png" %}></img>
+                <img src={% static "icons\facebook.png" %}></img>
+                <img src={% static "icons\instagram.png" %}></img>            
             </div>
             <div id="vazia"></div>
         </span>
         <div id="made">
-            <h6>Made with<img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\code.png"></img> and 
-            <img src="C:\Users\gabri\Documents\Projeto - Integrar\Integrar\static\valentines-heart.png"></img></h6>
+            <h6>Made with<img src={% static "icons\code.png" %}></img> and 
+            <img src={% static "icons\valentines-heart.png" %}></img></h6>
         </div>
     </footer>
 </body> 
