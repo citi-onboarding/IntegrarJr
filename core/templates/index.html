@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,60 +6,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "css\style.css" %}">
+    <link rel="stylesheet" href={% static "css\style.css" %}>
+    <title>Integrar Jr</title>
+    
+    <!--import das fontes-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!--import dos icones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav id="navbar"></nav>
-    <div class="carrossel"></div>
-    <div class="MVV"></div>
-    <div class="Serviços"></div>
-    <div class="Contato">
-        <h4>CONTATO</h4>
-        <form id="contatoform" action="" method = "POST">
-                {% csrf_token %} {{ form }}
-                <button class="campo" id="button" type="submit" style="margin-top:5px ;">Enviar</button>    
-        </form> 
-        <script src={% static "js/form.js" %}></script>
-    </div>
-    <footer class="footer">
-        <span class="footer-flex">
-            <div class="footer-son" id="footer-logo">
-                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
+    <nav class="navbar navbar_colored" id="idNavbar">
+    	<div class="adress adress_colored">
+            <div class="adress__text">
+                <p>RUA DOM MANUEL DE MEDEIROS, S/N, DOIS IRMÃOS | (81) 9 9231-8901</p>
             </div>
-            <div class="footer-son" id="footer-dados">
-                <h5>INFORMAÇÕES</h5>
-                <p>consultoria.integrarjr@gmail.com</p>
-                <p>(81) 99231-8901</p>
-            </div>
-            <addres class="footer-son" id="footer-endereço">
-                <h5>ENDEREÇO</h5>
-                <p>Rua Dom Manoel de Medeiros, s/n, Dois Irmãos</p>
-                <p>Seg - Sex 08:00 às 18:00</p>
-            </addres>
-            <div class="footer-son" id="footer-redes-sociais">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>             
-            </div>
-            <div id="vazia"></div>
-            <div id="footer-media">
-                <div id="footer-logo-media">
-                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
-                </div>
-                <div class="footer-son" id="footer-redes-sociais-media">
-                    <i class="fab fa-twitter"></i>  
-                    <i class="fab fa-facebook-f"></i>   
-                    <i class="fab fa-instagram"></i>   
-                    <h6>Made with <strong><i class="fas fa-code"></i></strong></strong> and ♥</h6>    
-                </div>
-            </div>
-        </span>
-        <div id="made">
-            <h6>Made with<img src={% static "icons\code.png" %}></img> and ♥</h6>
         </div>
-    </footer>
+        <div class="navbar-menu">
+        	<div class="navbar-logo">
+            	<img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
+        	</div>
+        	<div class="navbar-collapse">
+            	<ul class="navbar-buttons">
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idHome">Home</a>
+                	</li>
+            	    <li>
+                	    <a class="navbar-buttons__link" href="#idQuemSomos">Institucional</a>
+	                </li>
+    	            <li>
+        	            <a class="navbar-buttons__link" href="#idServicos">Serviços</a>
+            	    </li>
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idContato">Contato</a>
+                	</li>
+            	</ul>
+       		</div>
+			<div class="navbar-hamburger navbar_responsive">
+				<div class="navbar-hamburger-box">
+					<a href="javascript:void(0);" class="navbar-hamburger-icon" onclick="navResponsive(), iconEffect(this)">
+						<div class="navbar-hamburger__bar bar1"></div>
+ 						<div class="navbar-hamburger__bar bar2"></div>
+ 						<div class="navbar-hamburger__bar bar3"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+    </nav>
+    <div class="carrossel" id="idCarrossel"></div>
+    <div class="MVV" id="idInstitucional"></div>
+    <div class="Serviços" id="idServicos"></div>
+    <div class="Contato" id="idContato"></div>
+    <footer class="footer"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src={% static "js\scroll-navigation.js" %}></script>
+	<script src={% static "js\main.js" %}></script>
 </body> 
 </html>
