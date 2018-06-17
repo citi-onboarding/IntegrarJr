@@ -1,3 +1,46 @@
+#footer-media{
+    display: none;
+}
+@media(max-width: 1280px){
+    .footer-flex{
+        flex-direction: column;
+    }
+    #footer-media{
+        margin-top:30px;
+        display: inline-flex;
+        order:3;
+        flex-direction: row;
+        width:100%;
+    }
+    #footer-logo-media{
+       width:50%;
+       text-align:center;
+    }
+    #footer-redes-sociais-media{
+        width:50%;
+        text-align: center;
+    }
+    #footer-logo{
+        display: none;
+    }
+    #footer-redes-sociais{
+        display: none;
+    }
+    #footer-dados{
+        order: 1;
+        width: 100%;
+        margin-left: 20%
+    }
+    #footer-endereço{
+        order: 2;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    #made{
+        display: none;
+    }
+}
 .Contato{
     position: absolute;
     display: inline-flex;
@@ -49,7 +92,7 @@ footer{
     justify-content: space-between;
     display: flex;
 }
-#footer-redes-sociais img{
+#footer-redes-sociais img, #footer-redes-sociais-media img{
     padding: 5px;
     width: 32px;
     height: 32px;
@@ -57,10 +100,10 @@ footer{
 #footer-redes-sociais:hover{
     cursor: pointer;
 }
-h5{
+footer h5{
     margin-bottom: 15px;
 }
-p{
+footer p{
     margin: 0px;
 }
 #vazia{

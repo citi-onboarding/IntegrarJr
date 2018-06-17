@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={% static "css\style.css" %}>
+    <link rel="stylesheet" href="{% static "css\style.css" %}">
 </head>
 <body>
     <nav id="navbar"></nav>
@@ -16,27 +16,18 @@
     <div class="Contato">
         <h4>CONTATO</h4>
         <form action="" method = "POST">
-            <div id="contato-1">
-            <input class="campo" type="text" name="nome" placeholder="Nome e sobrenome"><br>
-            <input class="campo" type="email" name="email" placeholder="Email"><br>
-            <input class="campo" type="text" name="telefone" placeholder="Telefone"><br>            
-            <input class="campo" type="text" name="conheceu" placeholder="Como você nos conheceu"><br>
-           
-            </div>  
-            <div id="contato-2">
-                <input class="campo" type="text" name="Assunto" placeholder="Assunto"><br>            
-                <textarea class="campo" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                {{ form }}
                 <button class="campo" id="button" type="submit" style="margin-top:5px ;">Enviar</button>
-            </div>
+           
         </form>
     </div>
     <footer class="footer">
         <span class="footer-flex">
             <div class="footer-son" id="footer-logo">
-                <img src={% static "\images\integrar.jpg" %} width="100px" height="100px"></img>
+                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
             </div>
             <div class="footer-son" id="footer-dados">
-                <h5>DADOS</h5>
+                <h5>INFORMAÇÕES</h5>
                 <p>consultoria.integrarjr@gmail.com</p>
                 <p>(81) 99231-8901</p>
             </div>
@@ -51,6 +42,17 @@
                 <img src={% static "icons\instagram.png" %}></img>            
             </div>
             <div id="vazia"></div>
+            <div id="footer-media">
+                <div id="footer-logo-media">
+                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
+                </div>
+                <div class="footer-son" id="footer-redes-sociais-media">
+                    <img src={% static "icons\twitter.png" %}></img>
+                    <img src={% static "icons\facebook.png" %}></img>
+                    <img src={% static "icons\instagram.png" %}></img>    
+                    <h6>Made with<strong></></strong></strong> and ♥</h6>    
+                </div>
+            </div>
         </span>
         <div id="made">
             <h6>Made with<img src={% static "icons\code.png" %}></img> and 
