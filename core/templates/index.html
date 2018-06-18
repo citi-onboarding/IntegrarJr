@@ -1,24 +1,20 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Empresa</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="screen" href="style.css">
-
-<!import das fontes>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-
-<!import dos icones>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={% static "css\style.css" %}>
+
+    <title>Integrar Jr</title>
+
+    <!--import das fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!--import dos icones-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar_colored" id="idNavbar">
@@ -34,10 +30,10 @@
         	<div class="navbar-collapse">
             	<ul class="navbar-buttons">
                 	<li>
-                    	<a class="navbar-buttons__link" href="#idHome">Home</a>
+                    	<a class="navbar-buttons__link" href="#idCarrossel">Home</a>
                 	</li>
             	    <li>
-                	    <a class="navbar-buttons__link" href="#idQuemSomos">Institucional</a>
+                	    <a class="navbar-buttons__link" href="#idInstitucional">Institucional</a>
 	                </li>
     	            <li>
         	            <a class="navbar-buttons__link" href="#idServicos">Serviços</a>
@@ -46,7 +42,7 @@
                     	<a class="navbar-buttons__link" href="#idContato">Contato</a>
                 	</li>
             	</ul>
-       		</div>
+            </div>
 			<div class="navbar-hamburger navbar_responsive">
 				<div class="navbar-hamburger-box">
 					<a href="javascript:void(0);" class="navbar-hamburger-icon" onclick="navResponsive(), iconEffect(this)">
@@ -55,7 +51,7 @@
  						<div class="navbar-hamburger__bar bar3"></div>
 					</a>
 				</div>
-			</div>
+            </div>
 		</div>
     </nav>
     <div class="carrossel" id="idCarrossel"></div>
