@@ -217,7 +217,7 @@ p{
         top: 100%;
         margin-top: 0;
         padding-top:s 10px;
-        padding-left: 40px;
+        padding-left: 50px;
         padding-bottom: 10px;
         border-top: 1px solid #c1c1c1;
         color: #004b4e;
@@ -225,7 +225,7 @@ p{
 
     .navbar-buttons__link {
         font-size: 20px;
-        border-bottom: 2px solid #008B8B;
+        border-bottom: 2px solid #004b4e;
     }
 
     .navbar-hamburger {
@@ -286,4 +286,5 @@ p{
         top: 10px;
     }
 }
+
 
