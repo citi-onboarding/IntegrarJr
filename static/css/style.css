@@ -10,13 +10,24 @@
 .Contato h4{
     font-family: 'Roboto Condensed', sans-serif;
 }
+/* DIVS DOS CONTATOS*/
+
+#divaux1{
+    align-self: left;
+}
+#divaux2{
+    align-self: right;
+}
 form {
+    display: inline-flex;
+    width: 700px;
+    flex-direction: row;
     align-items: center;
 }
 input[type=text] { /* Configuracoes do input do form do contato*/
     margin-top:7px;
     margin-bottom:7px;
-    width: 80%; /*Coloca o form com metade da div*/
+    width: 80%; 
     padding-bottom: 10px;
     background-color: transparent;
     justify-content: center;
@@ -98,11 +109,8 @@ footer{
 #footer-redes-sociais{
     justify-content: space-between;
     display: flex;
-}
-#footer-redes-sociais img, #footer-redes-sociais-media img{
-    padding: 5px;
-    width: 32px;
-    height: 32px;
+    text-align: center;
+    font-size: 32px;
 }
 #footer-redes-sociais:hover{
     cursor: pointer;
@@ -128,6 +136,24 @@ footer p{
 #made h6{
     display: flex;
     justify-content: flex-end;
+}
+.fa-twitter:before {
+    content: "\f099";
+    font-size: 32px;
+    color: #008B8B;
+    margin-left:-40px;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+    font-size: 32px;
+    margin-left: 15px;
+    color: #008B8B;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 32px;
+    margin-left: 15px;
+    color: #008B8B;
 }
 #footer-media{
     display: none;
@@ -172,6 +198,23 @@ footer p{
     }
     #made{
         display: none;
+    }
+    footer i{
+        margin-top:10px;
+    }
+    .fa-twitter:before {
+        content: "\f099";
+        font-size: 32px;
+    }
+    .fa-facebook-f:before {
+        content: "\f39e";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+        font-size: 32px;
+        margin-left: 5px;
     }
     /*CONTATO RESPANSIVO*/
     form{
