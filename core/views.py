@@ -5,36 +5,29 @@ from django.core.mail import send_mail
 
 # Create your views here.
 def index(request):
-    
-    # cuida dos dados vindos do form caso acionado
-    
+    # cuida dos dados vindos do form caso acionado  
     if request.method == 'POST':
-        # pega os dados do form e guar em sua variável
-        
+        # pega os dados do form e guar em sua variável    
         form = Contato(request.POST)
-        # verifica se o form é válido
-        
+        # verifica se o form é válido     
         if form.is_valid():
             # coloca cada dado em sua devida variável
             name = form.cleaned_data['nameContato']
-            phone = form.cleaned_data['emailContato']
-            email = form.cleaned_data['phoneContato']
+            phone = form.cleaned_data['mailContato']
+            mail = form.cleaned_data['phoneContato']
             subject = form.cleaned_data['subjectContato']
             meet = form.cleaned_data['meetContato']
             message = form.cleaned_data['messageContato']
-
             # Gera o corpo do Email como uma string
-          #  entiremail = ''.format(nameContato, emailContato, phoneContato, subjectContato, messageContato, meetContato)   
-
+            entiremail = 'Nome:{}\nTelefone: {}\nEmail: {}\nComo conheceu: {}\nMensagem: {}'.format(name, mail, phone, subject, message, meet)   
             send_mail(
                 subject,    # Assunto do email
                 entiremail,  # Corpo do email
-                '',   # aqui irá o email de envio
-                [''], #aqui irá o email de destino
-                
+                'gas5@cin.ufpe.br',   # aqui irá o email de envio
+                ['geekamancio@gmail.com'], #aqui irá o email de destino
+                fail_silently=False
             )
     # Se a página foi acessada diretamente pelo link, o form criado é em branco
     else:
         form = Contato()
-
     return render(request, 'index.html', {'form': form})
