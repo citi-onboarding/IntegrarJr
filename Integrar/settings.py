@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'widget_tweaks',
     'core',
 ]
 
@@ -125,8 +126,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-EMAIL_HOST = '' #Aqui irá a origem do email pra onde será enviado as mensagens
-EMAIL_HOST_USER = '' #Aqui estará o email do cliente
-EMAIL_HOST_PASSWORD = '' #Aqui é a senha desse email
+EMAIL_HOST = 'smtp.gmail.com' #Aqui irá a origem do email pra onde será enviado as mensagens
+EMAIL_HOST_USER = 'geekamancio@gmail.com' #Aqui estará o email do cliente
+EMAIL_HOST_PASSWORD = 'jecatatu10' #Aqui é a senha desse email
 EMAIL_PORT = 587 
 EMAIL_USE_TLS = True

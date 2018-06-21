@@ -1,2 +1,1 @@
-virtualenv==*
-django==*
+django==2.0.6
