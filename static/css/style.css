@@ -210,6 +210,97 @@ body {
         position: absolute;
         top: 10px;
     }
+  
+    /* FOOTER RESPANSIVO*/
+    .footer-flex{
+        flex-direction: column;
+    }
+    #footer-media{
+        margin-top:30px;
+        display: inline-flex;
+        order:3;
+        flex-direction: row;
+        width:100%;
+    }
+    #footer-logo-media{
+       width:50%;
+       text-align:center;
+    }
+    #footer-redes-sociais-media{
+        width:50%;
+        text-align: center;
+    }
+    #footer-logo{
+        display: none;
+    }
+    #footer-redes-sociais{
+        display: none;
+    }
+    #footer-dados{
+        order: 1;
+        width: 100%;
+        margin-left: 20%
+    }
+    #footer-endereço{
+        order: 2;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    #made{
+        display: none;
+    }
+    footer i{
+        margin-top:10px;
+    }
+    .fa-twitter:before {
+        content: "\f099";
+        font-size: 32px;
+    }
+    .fa-facebook-f:before {
+        content: "\f39e";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+  
+    /*CONTATO RESPANSIVO*/
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    #id_nameContato{
+        margin:10px;
+        order:1;
+    }
+    #id_phoneContato{
+        margin:10px;
+        order:2;
+    }
+    #id_emailContato{
+        margin:10px;
+        order:3;
+    }
+    #id_subjectContato{
+        margin:10px;
+        order:4;
+    }
+    #id_meetContato{
+        margin:10px;
+        order:5;
+    }
+    #id_messageContato{
+        margin:10px;
+        order:6;
+    }
+    #button{
+        align-self: center;
+        order:7;
+    }    
 }
-
-
