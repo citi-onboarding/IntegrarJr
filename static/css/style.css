@@ -90,25 +90,85 @@ body {
     display: none;
 }
 
-/*FOOTER + CONTATOS*/
+
+/* CONTATO*/
 .Contato{
     display: inline-flex;
     flex-direction: column  ;
     align-items: center;
     width: 100%;
 }
-form{
-    display: flex;
+.Contato h4{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* DIVS DOS CONTATOS*/
+
+#divaux1{
+    align-self: left;
+}
+#divaux2{
+    align-self: right;
+}
+form {
+    display: inline-flex;
+    width: 700px;
     flex-direction: row;
-    justify-content: space-around;
-    width: 50%
+    align-items: center;
 }
-.campo{
-    margin-top: 10px;
+input[type=text] { /* Configuracoes do input do form do contato*/
+    margin-top:7px;
+    margin-bottom:7px;
+    width: 80%; 
+    padding-bottom: 10px;
+    background-color: transparent;
+    justify-content: center;
+    }
+    
+input::placeholder{ /* Coloca o placeholder com cor branca do input*/
+    color:#131212;
 }
-#button{
-    align-self: flex-end;
+    
+textarea::placeholder{ /* Coloca o placeholder com cor branca na area de texto(mensagem)*/
+    color:#151414;
 }
+#id_meetContato{
+    width:82%;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+option{ /* ajusta as configuracoes das opcoes do select*/
+    background: gray;
+    width: 80%;
+    color:white;
+}
+    
+textarea{ /* Ajusta as configuracoes da area de texto ( mensagem)*/
+    width: 80%;
+    padding-bottom: px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 0;
+    background-color: transparent;
+    resize: none;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+   
+button[type=submit] { /* Ajusta as configuracoes do botao*/
+    width: 100px;
+    padding: 12px 6px;
+    margin: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+  
+/* FOOTER*/
+
 footer{
     position: absolute;
     bottom:0px;
@@ -140,19 +200,17 @@ footer{
 #footer-redes-sociais{
     justify-content: space-between;
     display: flex;
-}
-#footer-redes-sociais img{
-    padding: 5px;
-    width: 32px;
-    height: 32px;
+    text-align: center;
+    font-size: 32px;
 }
 #footer-redes-sociais:hover{
     cursor: pointer;
 }
-h5{
+footer h5{
     margin-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
-p{
+footer p{
     margin: 0px;
 }
 #vazia{
@@ -171,8 +229,32 @@ p{
     justify-content: flex-end;
 }
 
+.fa-twitter:before {
+    content: "\f099";
+    font-size: 32px;
+    color: #008B8B;
+    margin-left:-40px;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+    font-size: 32px;
+    margin-left: 15px;
+    color: #008B8B;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 32px;
+    margin-left: 15px;
+    color: #008B8B;
+}
+#footer-media{
+    display: none;
+}
+
 /*MOBILE*/
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  
+    /*NAVBAR RESPONSIVA*/
     .navbar {
         height: 82px;
     }
@@ -289,6 +371,97 @@ p{
         position: absolute;
         top: 10px;
     }
+  
+    /* FOOTER RESPANSIVO*/
+    .footer-flex{
+        flex-direction: column;
+    }
+    #footer-media{
+        margin-top:30px;
+        display: inline-flex;
+        order:3;
+        flex-direction: row;
+        width:100%;
+    }
+    #footer-logo-media{
+       width:50%;
+       text-align:center;
+    }
+    #footer-redes-sociais-media{
+        width:50%;
+        text-align: center;
+    }
+    #footer-logo{
+        display: none;
+    }
+    #footer-redes-sociais{
+        display: none;
+    }
+    #footer-dados{
+        order: 1;
+        width: 100%;
+        margin-left: 20%
+    }
+    #footer-endereço{
+        order: 2;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    #made{
+        display: none;
+    }
+    footer i{
+        margin-top:10px;
+    }
+    .fa-twitter:before {
+        content: "\f099";
+        font-size: 32px;
+    }
+    .fa-facebook-f:before {
+        content: "\f39e";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+  
+    /*CONTATO RESPANSIVO*/
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    #id_nameContato{
+        margin:10px;
+        order:1;
+    }
+    #id_phoneContato{
+        margin:10px;
+        order:2;
+    }
+    #id_emailContato{
+        margin:10px;
+        order:3;
+    }
+    #id_subjectContato{
+        margin:10px;
+        order:4;
+    }
+    #id_meetContato{
+        margin:10px;
+        order:5;
+    }
+    #id_messageContato{
+        margin:10px;
+        order:6;
+    }
+    #button{
+        align-self: center;
+        order:7;
+    }    
 }
-
-
