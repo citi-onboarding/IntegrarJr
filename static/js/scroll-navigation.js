@@ -1,17 +1,3 @@
-// NAVBAR
-function navResponsive() {
-  var e = document.getElementById("idNavbar");
-  if (e.className === "navbar navbar_colored") {
-    e.className += " responsive";
-  } else {
-    e.className = "navbar navbar_colored";
-  }
-}
-
-function iconEffect(x) {
-  x.classList.toggle("change");
-}
-
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -47,17 +33,3 @@ $('a[href*="#"]')
       }
     }
   });
-
-// FORM
-$(document).ready(function(){
-  var form = document.getElementById("contatoform");
-  $('#contatoform').prepend($('<div id="divaux2"></div>'));
-  $('#contatoform').prepend($('<div id="divaux1"></div>'));
-  $('#divaux1').append(form.children[2]);
-  $('#divaux1').append(form.children[2]);
-  $('#divaux1').append(form.children[2]);
-  $('#divaux1').append(form.children[2]);
-  $('#divaux2').append(form.children[2]);
-  $('#divaux2').append(form.children[3]);
-  $('#divaux2').append(form.children[2]);
-});
