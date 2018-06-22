@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Cloud_Soft Light';
+    src: url('../fonts/Cloud_Soft-Light.otf')
+}
+
 body {
     margin: 0;
 }
@@ -9,7 +14,88 @@ body {
 
 
 /*INSTITUCIONAL*/
+.institucional {
+    background-color: #f1f1f1;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.title {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.title__text {
+    color: #5f5f5f;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.quem-somos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quem-somos-box {
+    width: 45%;
+    margin: 0;
+}
+
+.quem-somos__image {
+    height: 320px;
+    width: auto;
+    padding-left: 50px;
+}
+
+.box__title {
+    font-size: 28px;
+    color: #008B8B;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 3px;
+ }
+
+.box__text {
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.mvv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.mvv-box { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 28%;
+}
+
+.line {
+    background-color: #008B8B;
+    width: 28px;
+    height: 3px;
+}
+
+.line-long {
+    width: 48px;
+}
 
 /*SERVIÇOS*/
 
@@ -17,7 +103,7 @@ body {
 /*CONTATOS*/
 
 /*MOBILE*/
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   
     /*NAVBAR RESPONSIVA*/
     
@@ -25,8 +111,55 @@ body {
     /*CARROSSEL RESPONSIVO*/
 
 
-    /*INSTITUCIONAL RESSPONSIVO*/
+    /*INSTITUCIONAL RESPONSIVO*/
+    .institucional {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
+    .title {
+        padding-bottom: 26px;
+        padding-top: 30px;
+    }
+
+    .title__text {
+        font-size: 28px;
+    }
+
+    .quem-somos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quem-somos-box {
+        width: 100%;
+    }
+
+    .quem-somos__image {
+        padding-top: 30px;
+        padding-left: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mvv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mvv-box {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .box__title {
+        font-size: 20px;
+    }
+
+    .box__text {
+        padding-top: 20px;
+        font-size: 16px;
+    }
 
     /*SERVIÇOS RESPONSIVO*/
 
