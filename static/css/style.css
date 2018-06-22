@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
     margin: 0;
 =======
@@ -12,93 +13,40 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+=======
+@font-face {
+    font-family: 'Cloud_Soft Light';
+    src: url('../fonts/Cloud_Soft-Light.otf')
+>>>>>>> Finalizei a seção do institucional responsiva. Falta só a aprovação.
 }
 
-.adress {
-    height: 22px;
-    padding-left: 60px; 
-    padding-right: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.adress_colored {
-    background-color: #008B8B;
-}
-
-.adress__text {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-}
-
-.navbar-menu {
-    height: 66px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.navbar-logo {
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 60px; 
-}
-
-.navbar-logo__image {
-    height: 45px;
-}
-
-.navbar-collapse {
-    padding-right: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.navbar-buttons {
-    list-style-type: none;
-    width: 380px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-buttons__link {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
-    color: #004b4e;
-    text-decoration: none;
-}
-
-.navbar-hamburger {
-    display: none;
-}
-
-.navbar-responsive-a {
-    display: none;
+body {
+    margin: 0;
 }
 
 /*INSTITUCIONAL*/
 .institucional {
-    background-color: lightgray;
+    background-color: #f1f1f1;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    padding-top: 100px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.title {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.title__text {
+    color: #5f5f5f;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0;
 }
 
 .quem-somos {
@@ -106,10 +54,32 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.quem-somo-box {
-    display: flex;
+.quem-somos-box {
+    width: 45%;
+    margin: 0;
+}
+
+.quem-somos__image {
+    height: 320px;
+    width: auto;
+}
+
+.box__title {
+    font-size: 28px;
+    color: #008B8B;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 3px;
+ }
+
+.box__text {
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .mvv {
@@ -117,25 +87,23 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 80px;
 }
 
 .mvv-box { 
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 30%;
-}
-
-.mvv-title {
-    margin: 0;
+    padding-top: 100px;
+    width: 28%;
 }
 
 .line {
     background-color: #008B8B;
     width: 28px;
-    height: 2px;
+    height: 3px;
 }
 
+<<<<<<< HEAD
 /* CONTATO*/
 
 .Contato{
@@ -180,3 +148,59 @@ body {
 
     
 }
+=======
+.line-long {
+    width: 48px;
+}
+
+@media(max-width: 1280px){
+    /*INSTITUCIONAL RESPONSIVO*/
+    .institucional {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title {
+        padding-bottom: 26px;
+        padding-top: 30px;
+    }
+
+    .title__text {
+        font-size: 28px;
+    }
+
+    .quem-somos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quem-somos-box {
+        width: 100%;
+    }
+
+    .quem-somos__image {
+        padding-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    .mvv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mvv-box {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .box__title {
+        font-size: 20px;
+    }
+
+    .box__text {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+}
+>>>>>>> Finalizei a seção do institucional responsiva. Falta só a aprovação.
