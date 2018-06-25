@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -15,11 +16,14 @@ body {
 
 
 /*CONTATOS*/
+
 .Contato{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 600px;
+    background-color: #f1f1f1;
 }
 .Contato h4{
     margin:40px;
@@ -52,6 +56,7 @@ input[type=text] {
     border-width:1px;
     background-color: transparent;
     justify-content: center;
+    border-style: solid;
     }
     
 input::placeholder{ 
@@ -67,16 +72,16 @@ textarea::placeholder{
     border-width:1px;
     width:323px;
     height: 35px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #f1f1f1;
 }
 option{ 
-    background: gray;
+    background-color: white;
+    text-decoration-color: black;
     width: 320px;
     height: 30px;
-    color:white;
 }
     
 textarea{ 
@@ -86,9 +91,8 @@ textarea{
     background-color: transparent;
     resize: none;
     border-width: 1px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
+    border-color: black;
+    border-style: solid;
 }
    
 button[type=submit] { 
@@ -104,27 +108,29 @@ button[type=submit] {
   
 /* FOOTER*/
 
-footer{
+footer {
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 20%;
 }
-.footer-flex{
 
+.footer-flex {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-.footer-son{
+
+.footer-son {
     padding-right: 10px;
 }
-#footer-logo{
+
+#footer-logo {
     margin-top: 30px;
     margin-left: 80px;
     display: flex;
@@ -132,56 +138,67 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#footer-redes-sociais{
+
+#footer-redes-sociais {
     justify-content: space-between;
     display: flex;
     text-align: center;
     font-size: 32px;
 }
-#footer-redes-sociais:hover{
+
+#footer-redes-sociais:hover {
     cursor: pointer;
 }
-footer h5{
+
+footer h5 {
     margin-bottom: 15px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-footer p{
+
+footer p {
     margin: 0px;
 }
-#vazia{
+
+#vazia {
     display: flex;
     width: 50px;
 }
-#made{
+
+#made {
     align-self: flex-end;
     position: relative;
     bottom: 0px;
     bottom: -15px;
     margin-right: 50px;
 }
-#made h6{
+
+#made h6 {
     display: flex;
     justify-content: flex-end;
 }
+
 .fa-twitter:before {
     content: "\f099";
     font-size: 32px;
     color: #008B8B;
-    margin-left:-40px;
+    margin-left: -40px;
 }
+
 .fa-facebook-f:before {
     content: "\f39e";
     font-size: 32px;
     margin-left: 15px;
     color: #008B8B;
 }
+
 .fa-instagram:before {
     content: "\f16d";
     font-size: 32px;
     margin-left: 15px;
     color: #008B8B;
 }
-#footer-media{
+
+#footer-media {
     display: none;
 }
 /*MOBILE*/
@@ -193,6 +210,7 @@ footer p{
     /*CARROSSEL RESPONSIVO*/
 
 
+
     /*INSTITUCIONAL RESSPONSIVO*/
 
 
@@ -202,4 +220,149 @@ footer p{
     /*CONTATOS RESPONSIVO*/
 
     
+}
+
+@media(max-width: 1280px) and (max-height: 720px) {
+    /* FOOTER RESPANSIVO*/
+    .footer-flex {
+        flex-direction: column;
+    }
+    #footer-media {
+        margin-top: 30px;
+        display: inline-flex;
+        order: 3;
+        flex-direction: row;
+        width: 100%;
+    }
+    #footer-logo-media {
+        width: 50%;
+        text-align: center;
+    }
+    #footer-redes-sociais-media {
+        width: 50%;
+        text-align: center;
+    }
+    #footer-logo {
+        display: none;
+    }
+    #footer-redes-sociais {
+        display: none;
+    }
+    #footer-dados {
+        order: 1;
+        width: 100%;
+        margin-left: 20%
+    }
+    #footer-endereço {
+        order: 2;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    #made {
+        display: none;
+    }
+    footer i {
+        margin-top: 10px;
+    }
+    .fa-twitter:before {
+        content: "\f099";
+        font-size: 32px;
+    }
+    .fa-facebook-f:before {
+        content: "\f39e";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+        font-size: 32px;
+        margin-left: 5px;
+    }
+    /*CONTATO RESPANSIVO*/
+    #divaux1 {
+        align-self: center;
+    }
+    #divaux2 {
+        margin-left: 15px;
+        height: 185px;
+        align-self: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    input[type=text] {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        width: 220px; 
+        height:20px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        justify-content: center;
+    }
+    input::placeholder {
+        color: #131212;
+    }
+    textarea::placeholder {
+        color: #151414;
+    }
+    #id_meetContato {
+        width: 220px; 
+        height:30px;
+        padding-bottom: 10px;
+        border-width: 1px;
+    }
+    option {
+        width: 220px; 
+        height:30px;
+        color: white;
+    }
+    textarea {
+        width: 210px; 
+        height:60px;
+        padding-bottom: px;
+        padding-top: 12px;
+        padding-right: 12px;
+        padding-left: 0;
+        background-color: transparent;
+        resize: none;
+        border-width: 1px;
+    }
+    button[type=submit] {
+        width: 100px;
+        margin: 1px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #id_nameContato {
+        margin: 10px;
+        order: 1;
+    }
+    #id_phoneContato {
+        margin: 10px;
+        order: 2;
+    }
+    #id_mailContato {
+        margin-left: 10px;
+        order: 3;
+    }
+    #id_subjectContato {
+        margin-left: 10px;
+        order: 4;
+    }
+    #id_meetContato {
+        margin: 10px;
+        order: 5;
+    }
+    #id_messageContato {
+        margin-left: 10px;
+        order: 6;
+    }
+    #button {
+        margin-left: 80px; 
+        order: 7;
+    }
 }
