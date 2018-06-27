@@ -16,7 +16,43 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar_colored" id="idNavbar"></nav>
+    <nav class="navbar navbar_colored" id="idNavbar">
+    	<div class="adress adress_colored">
+            <div class="adress__text">
+                <p>RUA DOM MANUEL DE MEDEIROS, S/N, DOIS IRMÃOS | (81) 9 9231-8901</p>
+            </div>
+        </div>
+        <div class="navbar-menu">
+        	<div class="navbar-logo">
+            	<img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
+        	</div>
+        	<div class="navbar-collapse">
+            	<ul class="navbar-buttons">
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idCarrossel">Home</a>
+                	</li>
+            	    <li>
+                	    <a class="navbar-buttons__link" href="#idInstitucional">Institucional</a>
+	                </li>
+    	            <li>
+        	            <a class="navbar-buttons__link" href="#idServicos">Serviços</a>
+            	    </li>
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idContato">Contato</a>
+                	</li>
+            	</ul>
+            </div>
+			<div class="navbar-hamburger navbar_responsive">
+				<div class="navbar-hamburger-box">
+					<a href="javascript:void(0);" class="navbar-hamburger-icon" onclick="navResponsive(), iconEffect(this)">
+                        <div class="navbar-hamburger__bar bar1"></div>
+                        <div class="navbar-hamburger__bar bar2"></div>
+ 						<div class="navbar-hamburger__bar bar3"></div>
+					</a>
+				</div>
+            </div>
+		</div>
+    </nav>
     <div class="carrossel" id="idCarrossel"></div>
     <div class="institucional" id="idInstitucional"></div>
     <div class="Serviços" id="idServicos"></div>
