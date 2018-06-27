@@ -1,254 +1,170 @@
-/* CONTATO*/
-
-.Contato{
-    position: absolute;
-    display: inline-flex;
-    flex-direction: column  ;
-    align-items: center;
-    width: 100%;
+@font-face {
+    font-family: 'Cloud_Soft Light';
+    src: url('../fonts/Cloud_Soft-Light.otf')
 }
-.Contato h4{
+
+body {
+    margin: 0;
+}
+
+/*NAVBAR*/
+
+
+/*CARROSSEL*/
+
+
+/*INSTITUCIONAL*/
+.institucional {
+    background-color: #f1f1f1;
     font-family: 'Roboto Condensed', sans-serif;
-}
-/* DIVS DOS CONTATOS*/
-
-#divaux1{
-    align-self: left;
-}
-#divaux2{
-    align-self: right;
-}
-form {
-    display: inline-flex;
-    width: 700px;
-    flex-direction: row;
-    align-items: center;
-}
-input[type=text] { /* Configuracoes do input do form do contato*/
-    margin-top:7px;
-    margin-bottom:7px;
-    width: 80%; 
-    padding-bottom: 10px;
-    background-color: transparent;
-    justify-content: center;
-    }
-    
-input::placeholder{ /* Coloca o placeholder com cor branca do input*/
-    color:#131212;
-}
-    
-textarea::placeholder{ /* Coloca o placeholder com cor branca na area de texto(mensagem)*/
-    color:#151414;
-}
-#id_meetContato{
-    width:82%;
-    padding-bottom: 10px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
-option{ /* ajusta as configuracoes das opcoes do select*/
-    background: gray;
-    width: 80%;
-    color:white;
-}
-    
-textarea{ /* Ajusta as configuracoes da area de texto ( mensagem)*/
-    width: 80%;
-    padding-bottom: px;
-    padding-top: 12px;
-    padding-right: 12px;
-    padding-left: 0;
-    background-color: transparent;
-    resize: none;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
-   
-button[type=submit] { /* Ajusta as configuracoes do botao*/
-    width: 100px;
-    padding: 12px 6px;
-    margin: 8px;
-    font-size: 15px;
-    cursor: pointer;
-}
-  
-/* FOOTER*/
-
-footer{
-    position: absolute;
-    bottom:0px;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 10%;
 }
-.footer-flex{
 
+.title {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.title__text {
+    color: #5f5f5f;
+    font-size: 44px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.quem-somos {
+    width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-}
-.footer-son{
-    padding-right: 10px;
-}
-#footer-logo{
-    margin-top: 30px;
-    margin-left: 80px;
-    display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#footer-redes-sociais{
-    justify-content: space-between;
-    display: flex;
-    text-align: center;
-    font-size: 32px;
-}
-#footer-redes-sociais:hover{
-    cursor: pointer;
-}
-footer h5{
-    margin-bottom: 15px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-footer p{
-    margin: 0px;
-}
-#vazia{
-    display: flex;
-    width: 100px;
-}
-#made{
-    align-self: flex-end;
-    position: relative;
-    bottom: 0px;
-    bottom: -20px;
-    margin-right: 50px;
-}
-#made h6{
-    display: flex;
-    justify-content: flex-end;
-}
-.fa-twitter:before {
-    content: "\f099";
-    font-size: 32px;
-    color: #008B8B;
-    margin-left:-40px;
-}
-.fa-facebook-f:before {
-    content: "\f39e";
-    font-size: 32px;
-    margin-left: 15px;
-    color: #008B8B;
-}
-.fa-instagram:before {
-    content: "\f16d";
-    font-size: 32px;
-    margin-left: 15px;
-    color: #008B8B;
-}
-#footer-media{
-    display: none;
 }
 
-@media(max-width: 1280px){
-    /* FOOTER RESPANSIVO*/
-    .footer-flex{
+.quem-somos-box {
+    width: 45%;
+    margin: 0;
+}
+
+.quem-somos__image {
+    height: 320px;
+    width: auto;
+    padding-left: 50px;
+}
+
+.box__title {
+    font-size: 28px;
+    color: #008B8B;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 3px;
+ }
+
+.box__text {
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.mvv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.mvv-box { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 28%;
+}
+
+.line {
+    background-color: #008B8B;
+    width: 28px;
+    height: 3px;
+}
+
+.line-long {
+    width: 48px;
+}
+
+/*SERVIÇOS*/
+
+
+/*CONTATOS*/
+
+/*MOBILE*/
+@media (max-width: 1024px) {
+  
+    /*NAVBAR RESPONSIVA*/
+    
+    
+    /*CARROSSEL RESPONSIVO*/
+
+
+    /*INSTITUCIONAL RESPONSIVO*/
+    .institucional {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .title {
+        padding-bottom: 26px;
+        padding-top: 30px;
+    }
+
+    .title__text {
+        font-size: 28px;
+    }
+
+    .quem-somos {
         flex-direction: column;
+        align-items: flex-start;
     }
-    #footer-media{
-        margin-top:30px;
-        display: inline-flex;
-        order:3;
-        flex-direction: row;
-        width:100%;
-    }
-    #footer-logo-media{
-       width:50%;
-       text-align:center;
-    }
-    #footer-redes-sociais-media{
-        width:50%;
-        text-align: center;
-    }
-    #footer-logo{
-        display: none;
-    }
-    #footer-redes-sociais{
-        display: none;
-    }
-    #footer-dados{
-        order: 1;
+
+    .quem-somos-box {
         width: 100%;
-        margin-left: 20%
     }
-    #footer-endereço{
-        order: 2;
-        width: 100%;
-        margin-left: 20%;
-        margin-top: 10px;
+
+    .quem-somos__image {
+        padding-top: 30px;
+        padding-left: 0;
+        max-width: 100%;
+        height: auto;
     }
-    #made{
-        display: none;
-    }
-    footer i{
-        margin-top:10px;
-    }
-    .fa-twitter:before {
-        content: "\f099";
-        font-size: 32px;
-    }
-    .fa-facebook-f:before {
-        content: "\f39e";
-        font-size: 32px;
-        margin-left: 5px;
-    }
-    .fa-instagram:before {
-        content: "\f16d";
-        font-size: 32px;
-        margin-left: 5px;
-    }
-    /*CONTATO RESPANSIVO*/
-    form{
-        display: flex;
+
+    .mvv {
         flex-direction: column;
-        justify-content: center;
-        width: 50%;
+        align-items: center;
     }
-    #id_nameContato{
-        margin:10px;
-        order:1;
+
+    .mvv-box {
+        padding-top: 40px;
+        width: 100%;
     }
-    #id_phoneContato{
-        margin:10px;
-        order:2;
+
+    .box__title {
+        font-size: 20px;
     }
-    #id_emailContato{
-        margin:10px;
-        order:3;
+
+    .box__text {
+        padding-top: 20px;
+        font-size: 16px;
     }
-    #id_subjectContato{
-        margin:10px;
-        order:4;
-    }
-    #id_meetContato{
-        margin:10px;
-        order:5;
-    }
-    #id_messageContato{
-        margin:10px;
-        order:6;
-    }
-    #button{
-        align-self: center;
-        order:7;
-    }    
+
+    /*SERVIÇOS RESPONSIVO*/
+
+
+    /*CONTATOS RESPONSIVO*/
+
+    
 }
