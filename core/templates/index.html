@@ -91,9 +91,49 @@
             </div>
         </div>
     </div>
-    <div class="Serviços" id="idServicos"></div>
+    <div class="servicos" id="idServicos">
+        <div class="container-servicos" id="servicos">
+            <div class="servicos-title">
+                <h2 class="servicos-title__text">Serviços</h2>
+            </div>
+            <div class="categorias">
+                <div class="box-servico">
+                    <img src={% static "images\financas2.jpg"%} class="box-servico__image" >
+                    <div class="box-servico__content">
+                        <h3 class="box-servico__title">Gestão Financeira</h3>
+                        <div class="servico_sublinhado"></div>
+                        <p class="box-servico__description">Alavanque seus resultados entendendo como andam as finanças da sua organização.</p>
+                    </div>
+                </div>
+                <div class="box-servico">
+                    <img src={% static "images\operacoes2.jpg"%} class="box-servico__image" >
+                    <div class="box-servico__content">
+                        <h3 class="box-servico__title">Gestão de Operações</h3>
+                        <div class="servico_sublinhado"></div>
+                        <p class="box-servico__description">Otimize seus processos, e torne sua organização mais produtiva por meio da consultoria em gestão.</p>
+                    </div>
+                </div>
+                <div class="box-servico">
+                    <img src={% static "images\mercadologica2.jpeg"%} class="box-servico__image" >
+                    <div class="box-servico__content">
+                        <h3 class="box-servico__title">Gestão Mercadológica</h3>
+                        <div class="servico_sublinhado"></div>
+                        <p class="box-servico__description">Desenvolva melhores estratégias de marketing compreendendo o mercado.</p>
+                    </div>
+                </div>
+                <div class="box-servico">
+                    <img src={% static "images\pessoas2.jpg"%} class="box-servico__image" >
+                    <div class="box-servico__content">
+                        <h3 class="box-servico__title">Gestão de Pessoas</h3>
+                        <div class="servico_sublinhado"></div>
+                        <p class="box-servico__description">Aumente a produtividade da sua organização gerindo bem o capital intelectual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="Contato" id="idContato">
-        <h4>CONTATO</h4>
+        <h4>Contato</h4>
         <form id="contatoform" action="" method = "POST">
                 {% csrf_token %} {{ form }}
                 <button class="campo" id="button" type="submit" style="margin-top:5px ;">Enviar</button>    

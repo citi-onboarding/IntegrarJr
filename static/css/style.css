@@ -35,7 +35,7 @@ body {
 
 .adress__text {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: white;
 }
@@ -62,6 +62,7 @@ body {
 }
 
 .navbar-collapse {
+    z-index: 500;
     padding-right: 60px;
     display: flex;
     flex-direction: row;
@@ -79,7 +80,7 @@ body {
 
 .navbar-buttons__link {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #004b4e;
     text-decoration: none;
 }
@@ -100,7 +101,7 @@ body {
     background-color: #f1f1f1;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-left: 100px;
     padding-right: 100px;
     display: flex;
@@ -180,11 +181,89 @@ body {
     width: 48px;
 }
 
-/*SERVIÃ‡OS*/
+/*SERVICOS*/
+.container-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicos-title {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px; 
+}
+
+.servicos-title__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5f5f5f;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.box-servico {
+    height: 500px;
+    width: 230px;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.box-servico__image {
+    width: 100%;
+    height: auto;
+}
+
+.box-servico__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-servico__title {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: #5f5f5f;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+
+.servico_sublinhado {
+    height: 1px;
+    background-color: #008B8B;
+    width: 50%;
+}
+
+.box-servico__description {
+    margin: 0;
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    color: #5f5f5f;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
 
 
 /*CONTATOS*/
-
 .Contato{
     display: inline-flex;
     flex-direction: column;
@@ -194,7 +273,12 @@ body {
     background-color: #f1f1f1;
 }
 .Contato h4{
-    margin:40px;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #5f5f5f;
     font-family: 'Roboto Condensed', sans-serif;
 }
         /* DIVS DOS CONTATOS*/
@@ -311,6 +395,9 @@ footer {
     padding: 10px;
     font-size: 15px;
 }
+#footer-endereco p{
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+}
 #idInformacao{
     margin-left: 10%;
     margin-right: 5%;
@@ -360,6 +447,10 @@ footer p {
     align-self:flex-end;
     color: #008B8B;
     justify-content: flex-end;
+}
+
+#vazia h6 {
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
 }
 
 .fa-twitter:before {
@@ -441,7 +532,6 @@ footer p {
 
     .navbar-buttons__link {
         font-size: 20px;
-        /*border-bottom: 2px solid #004b4e;*/
     }
 
     .navbar-buttons__link:hover {
@@ -521,7 +611,7 @@ footer p {
     }
 
     .title__text {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .quem-somos {
@@ -560,8 +650,27 @@ footer p {
     }
 
 
-    /*SERVIÃ‡OS RESPONSIVO*/
+    /*SERVICOS RESPONSIVO*/
+    .categorias {
+        width: 100vw;
+    }
 
+    .categorias {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicos-title {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .servicos-title__text {
+        margin: 0;
+        font-size: 32px;
+    }
 
     /*CONTATO RESPANSIVO*/
     #divaux1 {
@@ -571,6 +680,9 @@ footer p {
         margin-left: 19px;
         height: 185px;
         align-self: center;
+    }
+    .Contato h4 {
+        font-size: 32px;
     }
     form {
         display: flex;
