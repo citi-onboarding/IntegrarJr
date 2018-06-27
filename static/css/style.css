@@ -99,7 +99,7 @@ body {
 /*CONTATOS*/
 
 /*MOBILE*/
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   
     /*NAVBAR RESPONSIVA*/
     .navbar {
