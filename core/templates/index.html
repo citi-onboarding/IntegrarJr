@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,15 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "css\style.css" %}">
+    <link rel="stylesheet" href={% static "css\style.css" %}>
+    <title>Integrar Jr</title>
+
+    <!--import das fontes-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!--import dos icones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar"></nav>
-    <div class="carrossel"></div>
-    <div class="institucional">
-		<div class="title">
+    <nav class="navbar navbar_colored" id="idNavbar"></nav>
+    <div class="carrossel" id="idCarrossel"></div>
+    <div class="institucional" id="idInstitucional">
+        <div class="title">
             <h2 class="title__text">Institucional</h2>
         </div>
         <div class="quem-somos">
@@ -30,26 +35,31 @@
                 <h3 class="box__title">Missão</h3>
                 <div class="line"></div>
                 <p class="box__text">
-                        Desenvolver soluções em consultoria organizacional e atividades voltadas à construção e disseminação do conhecimento, além de formar profissionais críticos, criativos e autônomos.
+                    Desenvolver soluções em consultoria organizacional e atividades voltadas à construção e disseminação do conhecimento, além de formar profissionais críticos, criativos e autônomos.
                 </p>
             </div>
             <div class="mvv-box">
                 <h3 class="box__title">Visão</h3>
                 <div class="line"></div>
-                <p class="box__text">Ser reconhecida como empresa júnior de excelência na região metropolitana do Recife (2020).</p>
+                <p class="box__text">
+                    Ser reconhecida como empresa júnior de excelência na região metropolitana do Recife (2020).
+                </p>
             </div>
             <div class="mvv-box">
                 <h3 class="box__title">Valores</h3>
                 <div class="line"></div>
-                <p class="box__text">Respeito aos saberes, Desculpa ou resultados?, Comprometimento, Inovação, Encantamento do cliente, Ética, Empresa que inspire orgulho dos membros.</p>
+                <p class="box__text">
+                    Respeito aos saberes, Desculpa ou resultados?, Comprometimento, Inovação, Encantamento do cliente, Ética, Empresa que inspire orgulho dos membros.
+                </p>
             </div>
         </div>
-	</div>
-    <div class="Serviços"></div>
-    <div class="Contato"></div>
-	<footer class="footer"></footer>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </div>
+    <div class="Serviços" id="idServicos"></div>
+    <div class="Contato" id="idContato"></div>
+    <footer class="footer"></footer>
+
+	<!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src={% static "js\scroll-navigation.js" %}></script>
 	<script src={% static "js\main.js" %}></script>
 </body> 
