@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Cloud_Soft Light';
+    src: url('../fonts/Cloud_Soft-Light.otf')
+}
+
 body {
     margin: 0;
 }
@@ -7,16 +12,6 @@ body {
 
 /*CARROSSEL*/
 
-
-/*INSTITUCIONAL*/
-@font-face {
-    font-family: 'Cloud_Soft Light';
-    src: url('../fonts/Cloud_Soft-Light.otf')
-}
-
-body {
-    margin: 0;
-}
 
 /*INSTITUCIONAL*/
 .institucional {
@@ -59,6 +54,7 @@ body {
 .quem-somos__image {
     height: 320px;
     width: auto;
+    padding-left: 50px;
 }
 
 .box__title {
@@ -107,7 +103,7 @@ body {
 /*CONTATOS*/
 
 /*MOBILE*/
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   
     /*NAVBAR RESPONSIVA*/
     
@@ -141,7 +137,8 @@ body {
 
     .quem-somos__image {
         padding-top: 30px;
-        width: 100%;
+        padding-left: 0;
+        max-width: 100%;
         height: auto;
     }
 
