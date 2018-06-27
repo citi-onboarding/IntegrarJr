@@ -547,6 +547,7 @@ footer p {
         flex-direction: row;
         width: 100%;
         align-items: center;
+        justify-content: space-around;
     }
     #footer-logo-media {
         margin-left: 50px;
