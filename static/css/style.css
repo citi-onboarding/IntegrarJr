@@ -218,7 +218,7 @@ footer {
     display: flex;
     align-items: center;
 }
-#footer-endereÃ§o{
+#footer-endereco{
     display:flex;
     flex-direction: row;
     padding: 10px;
@@ -519,21 +519,24 @@ footer p {
     /* FOOTER RESPANSIVO*/
     .footer-flex {
         flex-direction: column;
+        margin-right: 20px;
     }
-    #footer-endereÃ§o{
+    #footer-endereco{
         display:flex;
+        margin-right: 50px;
         flex-direction: column;
         padding: 10px;
         font-size: 15px;
-        margin-left: 50px;
-        align-self: flex-start;
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
     }
     #idInformacao{
-        margin-left: 20px;
+        margin-left: 75px;
         color: #008B8B;
     }
     #idEndereco{
-        margin-left: 20px;
+        margin-left: 75px;
         color: #008B8B;
     }
     #footer-logo-media img{
@@ -571,11 +574,8 @@ footer p {
         width: 100%;
         margin-left: 20%
     }
-    #footer-endereÃƒÂ§o {
-        order: 2;
-        width: 100%;
-        margin-left: 20%;
-        margin-top: 10px;
+    #footer-endereco {
+      
     }
     #vazia {
         display: none;
