@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Cloud_Soft Light';
+    src: url('../fonts/Cloud_Soft-Light.otf')
+}
+
 body {
     margin: 0;
 }
@@ -10,14 +15,13 @@ body {
 
 /*INSTITUCIONAL*/
 
-
 /*SERVIÇOS*/
 
 
 /*CONTATOS*/
 
 /*MOBILE*/
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   
     /*NAVBAR RESPONSIVA*/
     
