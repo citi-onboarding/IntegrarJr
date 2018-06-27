@@ -93,7 +93,7 @@ body {
 /*INSTITUCIONAL*/
 
 
-/*SERVIÇOS*/
+/*SERVIÃ‡OS*/
 
 
 /*CONTATOS*/
@@ -121,7 +121,7 @@ body {
     height: 185px;
     align-self: right;
 }
-        /* FORMULÁRIO*/
+        /* FORMULÃRIO*/
 
 form {
     display: inline-flex;
@@ -218,7 +218,7 @@ footer {
     display: flex;
     align-items: center;
 }
-#footer-endereço{
+#footer-endereÃ§o{
     display:flex;
     flex-direction: row;
     padding: 10px;
@@ -426,7 +426,7 @@ footer p {
     /*INSTITUCIONAL RESSPONSIVO*/
 
 
-    /*SERVIÇOS RESPONSIVO*/
+    /*SERVIÃ‡OS RESPONSIVO*/
 
 
     /*CONTATO RESPANSIVO*/
@@ -520,7 +520,7 @@ footer p {
     .footer-flex {
         flex-direction: column;
     }
-    #footer-endereço{
+    #footer-endereÃ§o{
         display:flex;
         flex-direction: column;
         padding: 10px;
@@ -529,11 +529,11 @@ footer p {
         align-self: flex-start;
     }
     #idInformacao{
-        margin-left: 0px;
+        margin-left: 20px;
         color: #008B8B;
     }
     #idEndereco{
-        margin-left: 0;
+        margin-left: 20px;
         color: #008B8B;
     }
     #footer-logo-media img{
@@ -550,14 +550,14 @@ footer p {
         justify-content: space-around;
     }
     #footer-logo-media {
-        margin-left: 50px;
+        margin-left: 30px;
         width: 20%;
         text-align: center;
     }
     #footer-redes-sociais-media {
-        margin-left: 120px;
+        margin-left: 50px;
         color: #008B8B;
-        width: 20%;
+        width: 30%;
         text-align: center;
     }
     #footer-logo {
@@ -571,7 +571,7 @@ footer p {
         width: 100%;
         margin-left: 20%
     }
-    #footer-endereÃ§o {
+    #footer-endereÃƒÂ§o {
         order: 2;
         width: 100%;
         margin-left: 20%;
