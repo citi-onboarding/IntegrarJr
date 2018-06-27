@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
 }
@@ -106,12 +105,13 @@ body {
     width: 100%;
     height: 600px;
     background-color: #f1f1f1;
+    z-index: 9999999;
 }
 .Contato h4{
     margin:40px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-/* DIVS DOS CONTATOS*/
+        /* DIVS DOS CONTATOS*/
 
 #divaux1{
     align-self: left;
@@ -122,7 +122,7 @@ body {
     height: 185px;
     align-self: right;
 }
-/* FORMULÁRIO*/
+        /* FORMULÁRIO*/
 
 form {
     display: inline-flex;
@@ -189,15 +189,13 @@ button[type=submit] {
 }
   
 /* FOOTER*/
-
 footer {
-    position: absolute;
     bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 20%;
+    background-color: white;
 }
 
 .footer-flex {
@@ -206,6 +204,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    text-decoration-color:#008B8B;
 }
 
 .footer-son {
@@ -213,12 +212,40 @@ footer {
 }
 
 #footer-logo {
-    margin-top: 30px;
-    margin-left: 80px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+}
+#footer-endereço{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 15px;
+}
+#idInformacao{
+    margin-left: -80px;
+    color: #008B8B;
+}
+#idInformacao  h5{
+    margin-bottom: 5px;
+}
+#idEndereco{
+    margin-left:90px;
+    margin-right: -100px;
+    color: #008B8B;
+}
+#idEndereco h5{
+    margin-bottom: 5px;
+
+}
+#footer-logo img{
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    width:115px; 
+    height:auto;
 }
 
 #footer-redes-sociais {
@@ -226,6 +253,7 @@ footer {
     display: flex;
     text-align: center;
     font-size: 32px;
+    margin-right:-90px;
 }
 
 #footer-redes-sociais:hover {
@@ -233,7 +261,6 @@ footer {
 }
 
 footer h5 {
-    margin-bottom: 15px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -243,39 +270,29 @@ footer p {
 
 #vazia {
     display: flex;
-    width: 50px;
-}
-
-#made {
-    align-self: flex-end;
-    position: relative;
-    bottom: 0px;
-    bottom: -15px;
-    margin-right: 50px;
-}
-
-#made h6 {
-    display: flex;
+    font-size: 20px;
+    align-self:flex-end;
+    color: #008B8B;
     justify-content: flex-end;
 }
 
 .fa-twitter:before {
     content: "\f099";
-    font-size: 32px;
+    font-size: 30px;
     color: #008B8B;
     margin-left: -40px;
 }
 
 .fa-facebook-f:before {
     content: "\f39e";
-    font-size: 32px;
+    font-size: 30px;
     margin-left: 15px;
     color: #008B8B;
 }
 
 .fa-instagram:before {
     content: "\f16d";
-    font-size: 32px;
+    font-size: 30px;
     margin-left: 15px;
     color: #008B8B;
 }
@@ -419,10 +436,30 @@ footer p {
     
 }
 
-@media(max-width: 1280px) and (max-height: 720px) {
+@media(max-width: 1280px){
     /* FOOTER RESPANSIVO*/
     .footer-flex {
         flex-direction: column;
+    }
+    #footer-endereço{
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 15px;
+        margin-left: 50px;
+        align-self: flex-start;
+    }
+    #idInformacao{
+        margin-left: 0px;
+        color: #008B8B;
+    }
+    #idEndereco{
+        margin-left: 0;
+        color: #008B8B;
+    }
+    #footer-logo-media img{
+        width:100px; 
+        height:auto;
     }
     #footer-media {
         margin-top: 30px;
@@ -430,13 +467,17 @@ footer p {
         order: 3;
         flex-direction: row;
         width: 100%;
+        align-items: center;
     }
     #footer-logo-media {
-        width: 50%;
+        margin-left: 50px;
+        width: 20%;
         text-align: center;
     }
     #footer-redes-sociais-media {
-        width: 50%;
+        margin-left: 120px;
+        color: #008B8B;
+        width: 20%;
         text-align: center;
     }
     #footer-logo {
@@ -450,13 +491,13 @@ footer p {
         width: 100%;
         margin-left: 20%
     }
-    #footer-endereço {
+    #footer-endereÃ§o {
         order: 2;
         width: 100%;
         margin-left: 20%;
         margin-top: 10px;
     }
-    #made {
+    #vazia {
         display: none;
     }
     footer i {
@@ -489,7 +530,7 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        width: 20%;
     }
     input[type=text] {
         margin-top: 7px;
@@ -547,7 +588,7 @@ footer p {
         order: 3;
     }
     #id_subjectContato {
-        margin-left: 10px;
+        margin-left: 14px;
         order: 4;
     }
     #id_meetContato {
@@ -555,7 +596,7 @@ footer p {
         order: 5;
     }
     #id_messageContato {
-        margin-left: 10px;
+        margin-left: 14px;
         order: 6;
     }
     #button {
