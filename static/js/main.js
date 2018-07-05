@@ -12,6 +12,17 @@ function iconEffect(x) {
   x.classList.toggle("change");
 }
 
+$(document).click(function(event) { 
+  if (!$(event.target).closest('.navbar').length) {
+    var e = document.getElementById("idNavbar");
+    if (e.className === "navbar navbar_colored responsive") {
+      e.className = "navbar navbar_colored";
+      var x = document.getElementById("navbar-x-container");
+      iconEffect(x);
+    }
+  }
+});
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
