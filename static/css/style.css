@@ -212,6 +212,11 @@ body {
     padding-right: 50px;
 }
 
+.servico-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
 .box-servico {
     height: 500px;
     width: 230px;
@@ -222,7 +227,7 @@ body {
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     line-height: 1.6;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -675,6 +680,10 @@ footer p {
     .servicos-title__text {
         margin: 0;
         font-size: 32px;
+    }
+
+    .servico-wrap {
+        flex-direction: column;
     }
 
     /*CONTATO RESPANSIVO*/
