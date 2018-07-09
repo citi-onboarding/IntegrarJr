@@ -6,14 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="{% static "css\style.css" %}">
     <title>Integrar Jr</title>
+
+    
     <!-- import das fontes-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-   
+    
     <!-- import dos Ícones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <!-- import do slick-->
+    <link rel="stylesheet" type="text/css" href="{% static "slick\slick.css" %}"/>
+    
+    <link rel="stylesheet" href="{% static "css\style.css" %}">
+    
     
 </head>
 <body>
@@ -54,7 +60,23 @@
             </div>
 		</div>
     </nav>
-    <div class="carrossel" id="idCarrossel"></div>
+    <div class="carrossel" id="idCarrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-call carrossel-foto1">
+                <h3 class="carrossel-call__title">Integrando soluções para o seu negócio</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            <div class="carrossel-call carrossel-foto2">
+                <h3 class="carrossel-call__title">Soluções que fazem a diferença no dia a dia da sua organização</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            <div class="carrossel-call carrossel-foto3">
+                <h3 class="carrossel-call__title">Somos movidos pela vontade de transformar a realidade</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            
+        </div>
+    </div>
     <div class="institucional" id="idInstitucional">
         <div class="title">
             <h2 class="title__text">Institucional</h2>
@@ -185,7 +207,9 @@
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src={% static "js\main.js" %}></script>
+    <script type="text/javascript" src="{% static "slick/slick.min.js" %}"></script>
+
+    <script src={% static "js\main.js" %}></script>
 
 </body> 
 </html>

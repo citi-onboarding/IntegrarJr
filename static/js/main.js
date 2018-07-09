@@ -59,6 +59,21 @@ $('a[href*="#"]')
     }
   });
 
+// CARROSSEL
+$(document).ready(function(){
+  $('.carrossel-container').slick({
+    nextArrow: '<i class="fas fa-chevron-circle-right"></i>',
+    prevArrow: '<i class="fas fa-chevron-circle-left"></i>',
+    dots: true,
+    /*
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    */
+  });
+});
+
 // FORM
 $(document).ready(function(){
   var form = document.getElementById("contatoform");
