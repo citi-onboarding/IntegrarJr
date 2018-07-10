@@ -9,6 +9,7 @@ body {
 
 /*NAVBAR*/
 .navbar {
+    z-index: 2;
     height: 88px;
     width: 100%;
     position: fixed;
@@ -42,7 +43,6 @@ body {
 
 .navbar-menu {
     height: 66px;
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,10 +94,129 @@ body {
 }
 
 /*CARROSSEL*/
+.carrossel {
+    width: 100%;
+    padding-top: 88px;
+    height: 88vh;
+}
 
+.carrossel-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.seta-esquerda {
+    left: 40px;
+    content: url(../images/seta-esquerda.png);
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+}
+
+.seta-direita {
+    right: 40px;
+    content: url(../images/seta-direita.png);
+    height: 40px;
+    width: 40px;
+}
+
+.slick-arrow {
+    position: absolute;
+    cursor: pointer;
+}
+
+.slick-dots {
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    align-self: center;
+}
+
+.slick-dots button {
+    display: block;
+	width: 10px;
+	height: 10px;
+    padding: 6px;
+    margin: 10px;
+	border: none;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.5);	
+    text-indent: -9999px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #008B8B;
+}
+
+.slick-dots button {
+    cursor: pointer;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-call {
+    height: 93vh;
+    background-size: cover;
+}
+
+.carrossel-foto1 {
+    background-image: url(../images/carrossel-background1.jpg);
+}
+
+.carrossel-foto2 {
+    background-image: url(../images/carrossel-background2.jpg);
+}
+
+.carrossel-foto3 {
+    background-image: url(../images/carrossel-background3.jpg);
+}
+
+.carrossel-call__title {
+    margin: 50px 30px 20px; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.carrossel-call-link {
+    margin-top: 5px;
+}
+
+.carrossel-call__button {
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius:10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
 
 /*INSTITUCIONAL*/
 .institucional {
+    min-height: 88vh;
     background-color: #f1f1f1;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
@@ -112,7 +231,7 @@ body {
 
 .title {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .title__text {
@@ -161,13 +280,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .mvv-box { 
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 80px;
     width: 28%;
 }
 
@@ -182,6 +301,10 @@ body {
 }
 
 /*SERVICOS*/
+.servicos {
+    min-height: 88vh;
+}
+
 .container-servicos {
     display: flex;
     flex-direction: column;
@@ -490,7 +613,7 @@ footer p {
   
     /*NAVBAR RESPONSIVA*/
     .navbar {
-        height: 82px;
+        height: 76px;
     }
 
     .adress {
@@ -606,7 +729,26 @@ footer p {
     }        
     
     /*CARROSSEL RESPONSIVO*/
+    .carrossel {
+        padding-top: 76px;
+    }
 
+    .carrossel-call {
+        height: 100vh - 76px;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+
+    .slick-dots {
+        bottom: 5px;
+    }
+
+    .carrossel-call__title {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 
     /*INSTITUCIONAL RESPONSIVO*/
     .institucional {
