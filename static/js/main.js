@@ -62,8 +62,8 @@ $('a[href*="#"]')
 // CARROSSEL
 $(document).ready(function(){
   $('.carrossel-container').slick({
-    nextArrow: '<i class="fas fa-chevron-circle-right"></i>',
-    prevArrow: '<i class="fas fa-chevron-circle-left"></i>',
+    prevArrow: '<div class="seta-esquerda"></div>',
+    nextArrow: '<div class="seta-direita"></div>',
     dots: true,
     /*
     slidesToShow: 1,

@@ -43,7 +43,6 @@ body {
 
 .navbar-menu {
     height: 66px;
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,7 +97,7 @@ body {
 .carrossel {
     width: 100%;
     padding-top: 88px;
-    height: 90vh;
+    height: 88vh;
 }
 
 .carrossel-container {
@@ -110,23 +109,25 @@ body {
     position: relative;
 }
 
+
+.seta-esquerda {
+    left: 40px;
+    content: url(../images/seta-esquerda.png);
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+}
+
+.seta-direita {
+    right: 40px;
+    content: url(../images/seta-direita.png);
+    height: 40px;
+    width: 40px;
+}
+
 .slick-arrow {
     position: absolute;
-    /*Mudar para a cor certa*/
-    color: white;
-    font-size: 60px;
     cursor: pointer;
-}
-
-.fa-chevron-circle-left {
-    left: 40px;
-    z-index: 1;
-}
-
-.fa-chevron-circle-right {
-    z-index: 1;
-    right: 40px;
-    text-align: end;
 }
 
 .slick-dots {
@@ -142,9 +143,19 @@ body {
 }
 
 .slick-dots button {
-    margin: 4px;
-    border-radius: 100%;
-    background-color: white;
+    display: block;
+	width: 10px;
+	height: 10px;
+    padding: 6px;
+    margin: 10px;
+	border: none;
+	border-radius: 100%;
+	background-color: rgba(255,255,255,0.5);	
+    text-indent: -9999px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #008B8B;
 }
 
 .slick-dots button {
@@ -159,7 +170,7 @@ body {
 }
 
 .carrossel-call {
-    height: 90vh;
+    height: 93vh;
     background-size: cover;
 }
 
@@ -176,7 +187,7 @@ body {
 }
 
 .carrossel-call__title {
-    margin: 50px 30px 30px; 
+    margin: 50px 30px 20px; 
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 34px;
     font-weight: 400;
@@ -185,7 +196,7 @@ body {
 }
 
 .carrossel-call-link {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .carrossel-call__button {
@@ -205,6 +216,7 @@ body {
 
 /*INSTITUCIONAL*/
 .institucional {
+    min-height: 88vh;
     background-color: #f1f1f1;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
@@ -219,7 +231,7 @@ body {
 
 .title {
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .title__text {
@@ -268,13 +280,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .mvv-box { 
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 80px;
     width: 28%;
 }
 
@@ -289,6 +301,10 @@ body {
 }
 
 /*SERVICOS*/
+.servicos {
+    min-height: 88vh;
+}
+
 .container-servicos {
     display: flex;
     flex-direction: column;
@@ -717,8 +733,21 @@ footer p {
         padding-top: 76px;
     }
 
+    .carrossel-call {
+        height: 100vh - 76px;
+    }
+
     .slick-arrow {
         display: none;
+    }
+
+    .slick-dots {
+        bottom: 5px;
+    }
+
+    .carrossel-call__title {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
     /*INSTITUCIONAL RESPONSIVO*/
