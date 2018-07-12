@@ -65,12 +65,10 @@ $(document).ready(function(){
     prevArrow: '<div class="seta-esquerda"></div>',
     nextArrow: '<div class="seta-direita"></div>',
     dots: true,
-    /*
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
-    */
   });
 });
 

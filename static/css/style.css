@@ -460,6 +460,7 @@ textarea::placeholder{
     border-style: solid;
     border-color: black;
     background-color: #f1f1f1;
+    margin-top: 7px;
 }
 option{ 
     background-color: white;
@@ -559,12 +560,16 @@ footer {
     display: flex;
     text-align: center;
     font-size: 32px;
+    text-decoration: none;
 }
 
 #footer-redes-sociais:hover {
     cursor: pointer;
 }
 
+.fab{
+    text-decoration: none;
+}
 footer h5 {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -585,7 +590,7 @@ footer p {
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
 }
 
-.fa-twitter:before {
+.fab{
     content: "\f099";
     font-size: 30px;
     color: #008B8B;
@@ -862,18 +867,18 @@ footer p {
         color: #151414;
     }
     #id_meetContato {
-        width: 220px; 
+        width: 222px; 
         height:30px;
         padding-bottom: 10px;
+        padding-right: 20px;
         border-width: 1px;
     }
     option {
         width: 220px; 
         height:30px;
-        color: white;
     }
     textarea {
-        width: 210px; 
+        width: 209px; 
         height:60px;
         padding-bottom: px;
         padding-top: 12px;
@@ -902,7 +907,8 @@ footer p {
         order: 3;
     }
     #id_subjectContato {
-        margin-left: 14px;
+        width: 220px; 
+        margin-left: 12px;
         order: 4;
     }
     #id_meetContato {
@@ -910,7 +916,7 @@ footer p {
         order: 5;
     }
     #id_messageContato {
-        margin-left: 14px;
+        margin-left: 12px;
         order: 6;
     }
     #button {
@@ -934,11 +940,15 @@ footer p {
         margin-top: 10px;
     }
     #idInformacao{
-        margin-left: 75px;
+        align-self: center;
+        margin: 0;
+        width: 150px;
         color: #008B8B;
     }
     #idEndereco{
-        margin-left: 75px;
+        align-self: center;
+        margin-right: 0;
+        width: 250px;
         color: #008B8B;
     }
     #footer-logo-media img{
@@ -956,14 +966,14 @@ footer p {
     }
     #footer-logo-media {
         margin-left: 30px;
-        width: 20%;
+        width: 50%;
         text-align: center;
     }
     #footer-redes-sociais-media {
-        margin-left: 50px;
         color: #008B8B;
-        width: 30%;
+        width: 50%;
         text-align: center;
+        margin-bottom: -35px;
     }
     #footer-logo {
         display: none;
@@ -975,9 +985,6 @@ footer p {
         order: 1;
         width: 100%;
         margin-left: 20%
-    }
-    #footer-endereco {
-      
     }
     #vazia {
         display: none;
@@ -998,6 +1005,27 @@ footer p {
         content: "\f16d";
         font-size: 32px;
         margin-left: 5px;
+        margin-right: 50px;
     }
-    
+    h6 img{
+        width:40px;
+        height: 30px;
+    }
+    #footer-redes-sociais-media h6{
+        margin-top: 2px;
+    }
+}
+@media (width: 320px) and (height:568px) {
+    .fa-instagram:before {
+        content: "\f16d";
+        font-size: 32px;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+    #footer-redes-sociais-media {
+        margin-bottom: -40px;
+        color: #008B8B;
+        width: 50%;
+        text-align: center;
+    }
 }
