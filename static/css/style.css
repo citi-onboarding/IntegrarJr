@@ -613,6 +613,10 @@ footer p {
 #footer-media {
     display: none;
 }
+footer h6{
+    background-color: #f1f1f1;
+    padding: 4px;
+}
 /*MOBILE*/
 @media (max-width: 1024px) {
   
