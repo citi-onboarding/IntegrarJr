@@ -446,12 +446,10 @@ input[type=text] {
     }
     
 input::placeholder{ 
-    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
     color:#131212;
 }
     
 textarea::placeholder{
-    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
     color:#151414;
 }
 #id_meetContato{
@@ -464,7 +462,6 @@ textarea::placeholder{
     background-color: #f1f1f1;
     margin-top: 7px;
     padding-left: 5px;
-    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
 }
 option{ 
     background-color: white;
@@ -494,7 +491,6 @@ button[type=submit] {
     color: white;
     margin-left:222px;
     list-style-type: none;
-    font-family: 'Roboto Condensed', sans-serif;
 }
   
 /* FOOTER*/
