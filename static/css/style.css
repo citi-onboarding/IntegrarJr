@@ -433,9 +433,10 @@ form {
     align-items: center;
 }
 input[type=text] { 
+    padding-left: 10px;
     margin-top:7px;
     margin-bottom:7px;
-    width: 320px; 
+    width: 310px; 
     height:30px;
     border-width:1px;
     background-color: transparent;
@@ -444,12 +445,10 @@ input[type=text] {
     }
     
 input::placeholder{ 
-    padding-left: 10px;
     color:#131212;
 }
     
 textarea::placeholder{
-    padding-left: 10px;
     color:#151414;
 }
 #id_meetContato{
@@ -461,6 +460,7 @@ textarea::placeholder{
     border-color: black;
     background-color: #f1f1f1;
     margin-top: 7px;
+    padding-left: 5px;
 }
 option{ 
     background-color: white;
@@ -471,24 +471,25 @@ option{
     
 textarea{ 
     margin-top: 7px;
-    width: 317px;
+    width: 307px;
     height: 80px;
     background-color: transparent;
     resize: none;
     border-width: 1px;
     border-color: black;
     border-style: solid;
+    padding-left: 10px;
 }
    
 button[type=submit] { 
     width: 100px;
     height: 30px;
-    border-width:1px;
     font-size: 15px;
     cursor: pointer;
     background-color:#008B8B;
     color: white;
     margin-left:222px;
+    list-style-type: none;
 }
   
 /* FOOTER*/
