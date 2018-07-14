@@ -528,6 +528,7 @@ footer {
     flex-direction: row;
     padding: 10px;
     font-size: 15px;
+    width: 50%;
 }
 #footer-endereco p{
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
@@ -541,7 +542,7 @@ footer {
     margin-bottom: 5px;
 }
 #idEndereco{
-    margin-left: 100px;
+    margin-left: 25%;
     color: #008B8B;
 }
 #idEndereco h5{
@@ -551,7 +552,6 @@ footer {
 #footer-logo img{
     margin-left: 30px;
     margin-bottom: 10px;
-
     width:115px; 
     height:auto;
 }
@@ -562,6 +562,7 @@ footer {
     text-align: center;
     font-size: 32px;
     text-decoration: none;
+    padding-right: 40px;
 }
 
 #footer-redes-sociais:hover {
@@ -579,18 +580,31 @@ footer p {
     margin: 0px;
 }
 
-#vazia {
+#footer-citi { 
     display: flex;
     font-size: 20px;
-    align-self:flex-end;
+    align-items:center;
     color: #008B8B;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding-left: 40px;
+    background: #f1f1f1;
 }
 
-#vazia h6 {
+#footer-citi h6 {
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    margin: 10px 40px;
 }
-
+#footer-citi img{
+    width:30px;
+    height: auto;
+}
+#footer-direito, #footer-made{
+    height: 40px;
+}
+.far-fa-copyright{
+    height: 7px;
+    width: auto;
+}
 .fab{
     content: "\f099";
     font-size: 30px;
@@ -951,6 +965,7 @@ footer h6{
         color: #008B8B;
     }
     #idEndereco{
+        margin-left: 100px;
         align-self: center;
         margin-right: 0;
         width: 250px;
@@ -978,7 +993,8 @@ footer h6{
         color: #008B8B;
         width: 50%;
         text-align: center;
-        margin-bottom: -35px;
+        padding-left: 20px;
+        margin-right: -30px;
     }
     #footer-logo {
         display: none;
@@ -991,16 +1007,13 @@ footer h6{
         width: 100%;
         margin-left: 20%
     }
-    #vazia {
-        display: none;
+    #footer-citi {
+        font-size: 12px;
     }
     footer i {
         margin-top: 10px;
     }
-    .fa-twitter:before {
-        content: "\f099";
-        font-size: 32px;
-    }
+    
     .fa-facebook-f:before {
         content: "\f39e";
         font-size: 32px;
@@ -1013,11 +1026,8 @@ footer h6{
         margin-right: 50px;
     }
     h6 img{
-        width:40px;
-        height: 30px;
-    }
-    #footer-redes-sociais-media h6{
-        margin-top: 2px;
+        width:20px;
+        height: auto;
     }
 }
 @media (width: 320px) and (height:568px) {
@@ -1032,5 +1042,15 @@ footer h6{
         color: #008B8B;
         width: 50%;
         text-align: center;
+    }
+    #footer-citi {
+        font-size: 10px; 
+    }
+    #footer-citi img{
+        width:15px;
+        height: auto;
+    }
+    #footer-citi h6{
+        margin-top: 15px; 
     }
 }
