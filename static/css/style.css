@@ -583,7 +583,7 @@ footer p {
 
 #footer-citi { 
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
     align-items:center;
     color: #008B8B;
     justify-content: space-between;
@@ -598,7 +598,7 @@ footer p {
 }
 #footer-made img{
     margin-top: 4px;
-    width:30px;
+    width:25px;
     height: auto;
 }
 #footer-direito, #footer-made{
@@ -998,6 +998,7 @@ footer p {
         text-align: center;
         padding-left: 30px;
         margin-left: 30px;
+        margin-bottom: 30px;
     }
     #footer-logo {
         display: none;
