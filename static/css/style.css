@@ -583,24 +583,26 @@ footer p {
 
 #footer-citi { 
     display: flex;
-    font-size: 20px;
+    font-size: 12px;
     align-items:center;
     color: #008B8B;
     justify-content: space-between;
     padding-left: 40px;
     background: #f1f1f1;
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    height: 40px;
 }
 
-#footer-citi h6 {
-    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
-    margin: 10px 40px;
+#footer-made {
+    margin: 3px 40px;
 }
-#footer-citi img{
+#footer-made img{
+    margin-top: 4px;
     width:30px;
     height: auto;
 }
 #footer-direito, #footer-made{
-    height: 40px;
+    height: 30px;
 }
 .far-fa-copyright{
     height: 7px;
@@ -629,8 +631,7 @@ footer p {
 #footer-media {
     display: none;
 }
-footer h6{
-    background-color: #f1f1f1;
+#footer-made{
     padding: 4px;
 }
 /*MOBILE*/
@@ -995,8 +996,8 @@ footer h6{
         color: #008B8B;
         width: 50%;
         text-align: center;
-        padding-left: 20px;
-        margin-right: -30px;
+        padding-left: 30px;
+        margin-left: 30px;
     }
     #footer-logo {
         display: none;
@@ -1011,9 +1012,16 @@ footer h6{
     }
     #footer-citi {
         font-size: 12px;
+        padding-left: 30px;
+    }
+    #footer-made{
+        margin: 5px 10px;
     }
     footer i {
         margin-top: 10px;
+    }
+    #footer-made img{
+        margin-top: 2px;
     }
     
     .fa-facebook-f:before {
@@ -1028,9 +1036,12 @@ footer h6{
         margin-bottom: -5px;
         font-weight: bold;
     }
-    h6 img{
+    #footer-citi img{
         width:20px;
         height: auto;
+    }
+    #footer-direito, #footer-made{
+        height: 20px;
     }
 }
 @media (width: 320px) and (height:568px) {
@@ -1038,14 +1049,6 @@ footer h6{
         content: "\f16d";
         font-size: 32px;
         margin-left: 5px;
-        margin-right: 50px;
-    }
-    h6 img{
-        width:40px;
-        height: 30px;
-    }
-    #footer-redes-sociais-media h6{
-        margin-top: 2px;
     }
     #footer-redes-sociais-media {
         color: #008B8B;
@@ -1056,10 +1059,12 @@ footer h6{
         font-size: 10px; 
     }
     #footer-citi img{
+        margin-top: 4px;
         width:15px;
         height: auto;
     }
-    #footer-citi h6{
-        margin-top: 15px; 
+    #footer-made{
+        margin: 3px 20px;
     }
+    
 }
