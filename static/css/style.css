@@ -543,7 +543,7 @@ footer {
     margin-bottom: 5px;
 }
 #idEndereco{
-    margin-left: 20%;
+    margin-left: 25%;
     color: #008B8B;
 }
 #idEndereco h5{
@@ -583,26 +583,24 @@ footer p {
 
 #footer-citi { 
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     align-items:center;
-    color: white;
+    color: #008B8B;
     justify-content: space-between;
     padding-left: 40px;
-    background: #008B8B;
-    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
-    height: 44px;
+    background: #f1f1f1;
 }
 
-#footer-made {
-    margin: 3px 40px;
+#footer-citi h6 {
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    margin: 10px 40px;
 }
-#footer-made img{
-    margin-top: 4px;
-    width:25px;
+#footer-citi img{
+    width:30px;
     height: auto;
 }
 #footer-direito, #footer-made{
-    height: 30px;
+    height: 40px;
 }
 .far-fa-copyright{
     height: 7px;
@@ -997,9 +995,8 @@ footer h6{
         color: #008B8B;
         width: 50%;
         text-align: center;
-        padding-left: 30px;
-        margin-left: 30px;
-        margin-bottom: 30px;
+        padding-left: 20px;
+        margin-right: -30px;
     }
     #footer-logo {
         display: none;
@@ -1014,16 +1011,9 @@ footer h6{
     }
     #footer-citi {
         font-size: 12px;
-        padding-left: 30px;
-    }
-    #footer-made{
-        margin: 5px 10px;
     }
     footer i {
         margin-top: 10px;
-    }
-    #footer-made img{
-        margin-top: 2px;
     }
     
     .fa-facebook-f:before {
@@ -1038,12 +1028,9 @@ footer h6{
         margin-bottom: -5px;
         font-weight: bold;
     }
-    #footer-citi img{
+    h6 img{
         width:20px;
         height: auto;
-    }
-    #footer-direito, #footer-made{
-        height: 20px;
     }
 }
 @media (width: 320px) and (height:568px) {
@@ -1069,12 +1056,10 @@ footer h6{
         font-size: 10px; 
     }
     #footer-citi img{
-        margin-top: 4px;
         width:15px;
         height: auto;
     }
-    #footer-made{
-        margin: 3px 20px;
+    #footer-citi h6{
+        margin-top: 15px; 
     }
-    
 }
