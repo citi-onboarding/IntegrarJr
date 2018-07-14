@@ -446,10 +446,12 @@ input[type=text] {
     }
     
 input::placeholder{ 
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
     color:#131212;
 }
     
 textarea::placeholder{
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
     color:#151414;
 }
 #id_meetContato{
@@ -462,6 +464,7 @@ textarea::placeholder{
     background-color: #f1f1f1;
     margin-top: 7px;
     padding-left: 5px;
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
 }
 option{ 
     background-color: white;
@@ -543,7 +546,7 @@ footer {
     margin-bottom: 5px;
 }
 #idEndereco{
-    margin-left: 25%;
+    margin-left: 20%;
     color: #008B8B;
 }
 #idEndereco h5{
@@ -585,12 +588,12 @@ footer p {
     display: flex;
     font-size: 15px;
     align-items:center;
-    color: #008B8B;
+    color: white;
     justify-content: space-between;
     padding-left: 40px;
-    background: #f1f1f1;
+    background: #008B8B;
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
-    height: 40px;
+    height: 44px;
 }
 
 #footer-made {
