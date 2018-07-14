@@ -493,6 +493,7 @@ button[type=submit] {
     color: white;
     margin-left:222px;
     list-style-type: none;
+    font-family: 'Roboto Condensed', sans-serif;
 }
   
 /* FOOTER*/
