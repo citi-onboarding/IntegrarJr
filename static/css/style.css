@@ -619,7 +619,7 @@ footer p {
 
 .fa-facebook-f:before {
     content: "\f39e";
-    font-size: 30px;
+    font-size: 27px;
     margin-left: 15px;
     color: #008B8B;
 }
@@ -1030,13 +1030,15 @@ footer p {
     
     .fa-facebook-f:before {
         content: "\f39e";
-        font-size: 32px;
+        font-size: 29px;
         margin-left: 5px;
     }
     .fa-instagram:before {
         content: "\f16d";
         font-size: 32px;
         margin-left: 5px;
+        margin-bottom: -5px;
+        font-weight: bold;
     }
     #footer-citi img{
         width:20px;
