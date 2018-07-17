@@ -303,6 +303,7 @@ body {
 /*SERVICOS*/
 .servicos {
     min-height: 88vh;
+    background-color: #EFEDEF;
 }
 
 .container-servicos {
