@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrar Jr</title>
-
+    <title>Integrar JR.</title>
+   
+    <!-- adicionando favicon-->
+    <link rel="shortcut icon" href="{% static "images\favicon.jpeg" %}">
     
     <!-- import das fontes-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
@@ -31,8 +33,10 @@
         </div>
         <div class="navbar-menu">
         	<div class="navbar-logo">
-            	<img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
-        	</div>
+                <a href="#idCarrossel">
+            	    <img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
+                </a>
+                </div>
         	<div class="navbar-collapse">
             	<ul class="navbar-buttons">
                 	<li>
@@ -170,7 +174,7 @@
         <span class="footer-flex">
             <div class="footer-son" id="footer-logo">
                 <a href="#idCarrossel">
-                    <img src={% static "\images\logo_texto_vertical.png" %} width="100px" height="100px" alt="Logo da Integrar"></img>
+                    <img src={% static "\images\logo_texto_vertical.png" %} width="100px" height="100px" alt="Logo da Integrar">
                 </a>
             </div>
             <addres class="footer-son" id="footer-endereco">
@@ -186,38 +190,61 @@
             </div>
             </addres>
             <div class="footer-son" id="footer-redes-sociais">
-                <a class="fab fa-linkedin-in" alt="Logo do Linkedin" href="https://www.linkedin.com/company/integrarjr"></a>  
-                <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrar.junior"></a>
-                <a class="fab fa-instagram" alt="Logo do Instagram" href="https://www.instagram.com/integrarjr/"></a>             
+                <a class="fab fa-linkedin-in" alt="Logo do Linkedin" href="https://www.linkedin.com/company/integrarjr" target="blank"></a>  
+                <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrarjr" target="blank"></a>
+                <a class="fab fa-instagram" alt="Logo do Instagram" href="https://www.instagram.com/integrarjr/" target="blank"></a>
             </div>
-            <div id="vazia">
-                <h6>Made with
-                    <i class="fas fa-code"></i> and
-                    <i class="far fa-heart"></i></h6>
-            </div>
+            
             <div id="footer-media">
                 <div id="footer-logo-media">
                     <a href="#idCarrossel">
-                        <img src={% static "\images\logo_texto_vertical.png" %}  alt="Logo da Integrar" href="#idCarrossel"></img>
+                        <img src={% static "\images\logo_texto_vertical.png" %}  alt="Logo da Integrar" href="#idCarrossel">
                     </a>
                 </div>
                 <div class="footer-son" id="footer-redes-sociais-media">
-                    <a class="fab fa-twitter" alt="Logo do Twitter" href="Twitter.com"></a>  
-                    <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrar.junior"></a>   
-                    <a class="fab fa-instagram" alt="Logo do Instagram"></a>   
-                    <h6> Made with
-                        <i class="fas fa-code"></i> and
-                        <i class="far fa-heart"></i>></h6>    
+                    <a class="fab fa-linkedin-in" alt="Logo do Linkedin" href="https://www.linkedin.com/company/integrarjr" target="blank"></a>  
+                    <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrarjr" target="blank"></a>   
+                    <a class="fab fa-instagram" alt="Logo do Instagram" target="blank"></a>     
                 </div>
             </div>
         </span>
     </footer>
+    <div id="footer-citi">
+        <div id="footer-direitos">
+            Copyright <i class="far fa-copyright"></i> 2018 CITi
+            </div>
+
+        <div id="footer-made">
+            Made with
+                <i class="fas fa-code"></i> and
+                <i class="far fa-heart"></i> by
+                <a href="https://www.citi.org.br" target="blank">
+                    <img src="{% static "\images\citi-logo.png" %}">
+                </a>
+
+            
+        </div>
+    </div>
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static "slick/slick.min.js" %}"></script>
 
     <script src={% static "js\main.js" %}></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5b4fb13ee21878736ba21f17/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body> 
 </html>

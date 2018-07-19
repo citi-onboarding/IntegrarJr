@@ -7,7 +7,7 @@ from django.core.mail import send_mail
 def index(request):
     # cuida dos dados vindos do form caso acionado  
     if request.method == 'POST':
-        # pega os dados do form e guar em sua variável    
+        # pega os dados do form e guarda em sua variável    
         form = Contato(request.POST)
         # verifica se o form é válido     
         if form.is_valid():
