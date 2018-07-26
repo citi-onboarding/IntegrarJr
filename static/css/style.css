@@ -434,6 +434,7 @@ form {
     align-items: center;
 }
 input[type=text] { 
+    border-color: black;
     padding-left: 10px;
     margin-top:7px;
     margin-bottom:7px;
@@ -454,6 +455,10 @@ textarea::placeholder{
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
     color:#151414;
 }
+select::placeholder{
+    font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+    color:#151414;
+}
 #id_meetContato{
     border-width:1px;
     width:323px;
@@ -462,7 +467,7 @@ textarea::placeholder{
     border-style: solid;
     border-color: black;
     background-color: #f1f1f1;
-    margin-top: 7px;
+    margin-top: 10px;
     padding-left: 5px;
     font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
 }
@@ -472,17 +477,20 @@ option{
     width: 320px;
     height: 30px;
 }
-    
+#id_subjectContato{
+    margin-top:5px;
+} 
 textarea{ 
     margin-top: 7px;
     width: 307px;
-    height: 80px;
+    height: 74px;
     background-color: transparent;
     resize: none;
     border-width: 1px;
     border-color: black;
     border-style: solid;
     padding-left: 10px;
+    padding-top: 6px;
 }
    
 button[type=submit] { 
@@ -493,8 +501,10 @@ button[type=submit] {
     background-color:#008B8B;
     color: white;
     margin-left:222px;
+    margin-top: 18px;
     list-style-type: none;
     font-family: 'Roboto Condensed', sans-serif;
+    border: none;
 }
   
 /* FOOTER*/
@@ -598,7 +608,7 @@ footer p {
 }
 
 #footer-made {
-    margin: 3px 40px;
+    margin: 3px 80px;
 }
 #footer-made img{
     margin-top: 4px;
@@ -614,22 +624,22 @@ footer p {
 }
 .fab{
     content: "\f099";
-    font-size: 30px;
+    font-size: 32px;
     color: #008B8B;
 }
 
 .fa-facebook-f:before {
     content: "\f39e";
     font-size: 27px;
-    margin-left: 15px;
+    margin: 15px 15px 15px 15px;
     color: #008B8B;
 }
 
 .fa-instagram:before {
     content: "\f16d";
     font-size: 30px;
-    margin-left: 15px;
     color: #008B8B;
+    font-weight: bold;
 }
 
 #footer-media {
@@ -638,6 +648,7 @@ footer p {
 #footer-made{
     padding: 4px;
 }
+
 /*MOBILE*/
 @media (max-width: 1024px) {
   
@@ -904,12 +915,11 @@ footer p {
         height:30px;
     }
     textarea {
-        width: 219px; 
+        width: 209px; 
         height:60px;
-        padding-bottom: px;
         padding-top: 12px;
         padding-right: 12px;
-        padding-left: 0;
+        padding-left: 10px;
         background-color: transparent;
         resize: none;
         border-width: 1px;
@@ -981,6 +991,8 @@ footer p {
     #footer-logo-media img{
         width:100px; 
         height:auto;
+        padding-left: 50px;
+        padding-bottom: 10px;
     }
     #footer-media {
         margin-top: 30px;
@@ -1001,8 +1013,6 @@ footer p {
         width: 50%;
         text-align: center;
         padding-left: 30px;
-        margin-left: 30px;
-        margin-bottom: 30px;
     }
     #footer-logo {
         display: none;
@@ -1015,12 +1025,9 @@ footer p {
         width: 100%;
         margin-left: 20%
     }
-    #footer-citi {
-        font-size: 12px;
-        padding-left: 30px;
-    }
     #footer-made{
         margin: 5px 10px;
+        height: 20px;
     }
     footer i {
         margin-top: 10px;
@@ -1032,28 +1039,40 @@ footer p {
     .fa-facebook-f:before {
         content: "\f39e";
         font-size: 29px;
-        margin-left: 5px;
+
     }
     .fa-instagram:before {
         content: "\f16d";
         font-size: 32px;
-        margin-left: 5px;
-        margin-bottom: -5px;
         font-weight: bold;
     }
     #footer-citi img{
-        width:20px;
+        width:30px;
         height: auto;
     }
-    #footer-direito, #footer-made{
-        height: 20px;
+    #footer-citi {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+        background: #008B8B;
+        font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
+        height: 64px;
     }
+    #footer-direitos {
+        margin: 10px 0px -5px 0px;
+    }
+
 }
 @media (width: 320px) and (height:568px) {
+    .fa-facebook-f:before {
+        margin: 5px 5px 5px 5px;
+    }
     .fa-instagram:before {
         content: "\f16d";
         font-size: 32px;
-        margin-left: 5px;
     }
     #footer-redes-sociais-media {
         color: #008B8B;
@@ -1061,11 +1080,12 @@ footer p {
         text-align: center;
     }
     #footer-citi {
-        font-size: 10px; 
+        font-size: 15px; 
+        padding: 0px;
     }
     #footer-citi img{
         margin-top: 4px;
-        width:15px;
+        width:25px;
         height: auto;
     }
     #footer-made{
