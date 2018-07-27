@@ -1060,6 +1060,7 @@ footer p {
         background: #008B8B;
         font-family: 'Cloud_Soft Light', Helvetica, sans-serif;
         height: 64px;
+        padding: 0px;
     }
     #footer-direitos {
         margin: 10px 0px -5px 0px;

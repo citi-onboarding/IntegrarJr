@@ -24,7 +24,7 @@ def index(request):
                 subject,    # Assunto do email
                 entiremail,  # Corpo do email
                 'mensageiro.integrar@gmail.com',   # aqui irá o email de envio
-                ['mensageiro.integrar@gmail.com'], #aqui irá o email de destino
+                ['consultoria.integrarjr@gmail.com'], #aqui irá o email de destino
                 fail_silently=False
             )
     # Se a página foi acessada diretamente pelo link, o form criado é em branco
