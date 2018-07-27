@@ -23,8 +23,8 @@ def index(request):
             send_mail(
                 subject,    # Assunto do email
                 entiremail,  # Corpo do email
-                'gas5@cin.ufpe.br',   # aqui irá o email de envio
-                ['geekamancio@gmail.com'], #aqui irá o email de destino
+                'mensageiro.integrar@gmail.com',   # aqui irá o email de envio
+                ['consultoria.integrarjr@gmail.com'], #aqui irá o email de destino
                 fail_silently=False
             )
     # Se a página foi acessada diretamente pelo link, o form criado é em branco
