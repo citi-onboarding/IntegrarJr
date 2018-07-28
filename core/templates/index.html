@@ -6,60 +6,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static "css\style.css" %}">
+    <title>Integrar JR.</title>
+   
+    <!-- adicionando favicon-->
+    <link rel="shortcut icon" href="{% static "images\favicon.jpeg" %}">
+    
+    <!-- import das fontes-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    
+    <!-- import dos Ícones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- import do slick-->
+    <link rel="stylesheet" type="text/css" href="{% static "slick\slick.css" %}"/>
+    
+    <link rel="stylesheet" href="{% static "css\style.css" %}">
+    
+    
 </head>
 <body>
-    <nav id="navbar"></nav>
-    <div class="carrossel"></div>
-    <div class="MVV"></div>
-    <div class="Serviços"></div>
-    <div class="Contato">
-        <h4>CONTATO</h4>
+    <nav class="navbar navbar_colored" id="idNavbar">
+    	<div class="adress adress_colored">
+            <div class="adress__text">
+                <p>RUA DOM MANUEL DE MEDEIROS, S/N, DOIS IRMÃOS | (81) 9 9231-8901</p>
+            </div>
+        </div>
+        <div class="navbar-menu">
+        	<div class="navbar-logo">
+                <a href="#idCarrossel">
+            	    <img class="navbar-logo__image" src={% static "images\logo_texto.png"%} alt="Logomarca da Integrar Júnior">
+                </a>
+                </div>
+        	<div class="navbar-collapse">
+            	<ul class="navbar-buttons">
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idCarrossel">Home</a>
+                	</li>
+            	    <li>
+                	    <a class="navbar-buttons__link" href="#idInstitucional">Institucional</a>
+	                </li>
+    	            <li>
+        	            <a class="navbar-buttons__link" href="#idServicos">Serviços</a>
+            	    </li>
+                	<li>
+                    	<a class="navbar-buttons__link" href="#idContato">Contato</a>
+                	</li>
+            	</ul>
+            </div>
+			<div class="navbar-hamburger navbar_responsive">
+				<div class="navbar-hamburger-box">
+					<a href="javascript:void(0);" class="navbar-hamburger-icon" id="navbar-x-container" onclick="navResponsive(), iconEffect(this)">
+                        <div class="navbar-hamburger__bar bar1"></div>
+                        <div class="navbar-hamburger__bar bar2"></div>
+ 						<div class="navbar-hamburger__bar bar3"></div>
+					</a>
+				</div>
+            </div>
+		</div>
+    </nav>
+    <div class="carrossel" id="idCarrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-call carrossel-foto1">
+                <h3 class="carrossel-call__title">Integrando soluções para o seu negócio</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            <div class="carrossel-call carrossel-foto2">
+                <h3 class="carrossel-call__title">Soluções que fazem a diferença no dia a dia da sua organização</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            <div class="carrossel-call carrossel-foto3">
+                <h3 class="carrossel-call__title">Somos movidos pela vontade de transformar a realidade</h3>
+                <a href="#idContato" class="carrossel-call-link"><button type="button" class="carrossel-call__button">Entre em contato</button></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="institucional" id="idInstitucional">
+        <div class="title">
+            <h2 class="title__text">Institucional</h2>
+        </div>
+        <div class="quem-somos">
+            <div class="quem-somos-box">
+                <h3 class="box__title">Quem Somos</h3>
+                <div class="line line-long"></div>
+                <p class="box__text">A Integrar busca aproximar ao máximo sua equipe da vivência, responsabilidades e experiência do mercado de trabalho competitivo, adotando assim uma postura mais formal e tradicional no seu contato com o mercado e clientes.</p>
+            </div>
+            <img src={% static "images\punhos-time.png"%} alt="" class="quem-somos__image">
+        </div>
+        <div class="mvv">
+            <div class="mvv-box">
+                <h3 class="box__title">Missão</h3>
+                <div class="line"></div>
+                <p class="box__text">
+                    Desenvolver soluções em consultoria organizacional e atividades voltadas à construção e disseminação do conhecimento, além de formar profissionais críticos, criativos e autônomos.
+                </p>
+            </div>
+            <div class="mvv-box">
+                <h3 class="box__title">Visão</h3>
+                <div class="line"></div>
+                <p class="box__text">
+                    Ser reconhecida como empresa júnior de excelência na região metropolitana do Recife (2020).
+                </p>
+            </div>
+            <div class="mvv-box">
+                <h3 class="box__title">Valores</h3>
+                <div class="line"></div>
+                <p class="box__text">
+                    Respeito aos saberes, Desculpa ou resultados?; Comprometimento, Inovação, Encantamento do cliente, Ética, Empresa que inspire orgulho dos membros.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="servicos" id="idServicos">
+        <div class="container-servicos" id="servicos">
+            <div class="servicos-title">
+                <h2 class="servicos-title__text">Serviços</h2>
+            </div>
+            <div class="categorias">
+                <div class="servico-wrap">
+                    <div class="box-servico">
+                        <img src={% static "images\financas2.jpg"%} class="box-servico__image" >
+                        <div class="box-servico__content">
+                            <h3 class="box-servico__title">Gestão Financeira</h3>
+                            <div class="servico_sublinhado"></div>
+                            <p class="box-servico__description">Alavanque seus resultados entendendo como andam as finanças da sua organização.</p>
+                        </div>
+                    </div>
+                    <div class="box-servico">
+                        <img src={% static "images\operacoes2.jpg"%} class="box-servico__image" >
+                        <div class="box-servico__content">
+                            <h3 class="box-servico__title">Gestão de Operações</h3>
+                            <div class="servico_sublinhado"></div>
+                            <p class="box-servico__description">Otimize seus processos, e torne sua organização mais produtiva por meio da consultoria em gestão.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servico-wrap">
+                    <div class="box-servico">
+                        <img src={% static "images\mercadologica2.jpeg"%} class="box-servico__image" >
+                        <div class="box-servico__content">
+                            <h3 class="box-servico__title">Gestão Mercadológica</h3>
+                            <div class="servico_sublinhado"></div>
+                            <p class="box-servico__description">Desenvolva melhores estratégias de marketing compreendendo o mercado.</p>
+                        </div>
+                    </div>
+                    <div class="box-servico">
+                        <img src={% static "images\pessoas2.jpg"%} class="box-servico__image" >
+                        <div class="box-servico__content">
+                            <h3 class="box-servico__title">Gestão de Pessoas</h3>
+                            <div class="servico_sublinhado"></div>
+                            <p class="box-servico__description">Aumente a produtividade da sua organização gerindo bem o capital intelectual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Contato" id="idContato">
+        <h4>Contato</h4>
         <form id="contatoform" action="" method = "POST">
                 {% csrf_token %} {{ form }}
-                <button class="campo" id="button" type="submit" style="margin-top:5px ;">Enviar</button>    
+                <button class="campo" id="button" type="submit">Enviar</button>    
         </form> 
-        <script src={% static "js/form.js" %}></script>
+        
     </div>
-    <footer class="footer">
+    <footer class="footer" id="idFooter">
         <span class="footer-flex">
             <div class="footer-son" id="footer-logo">
-                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
+                <a href="#idCarrossel">
+                    <img src={% static "\images\logo_texto_vertical.png" %} width="100px" height="100px" alt="Logo da Integrar">
+                </a>
             </div>
-            <div class="footer-son" id="footer-dados">
+            <addres class="footer-son" id="footer-endereco">
+                <div id="idInformacao">
                 <h5>INFORMAÇÕES</h5>
                 <p>consultoria.integrarjr@gmail.com</p>
                 <p>(81) 99231-8901</p>
-            </div>
-            <addres class="footer-son" id="footer-endereço">
+               </div>
+               <div id="idEndereco">
                 <h5>ENDEREÇO</h5>
                 <p>Rua Dom Manoel de Medeiros, s/n, Dois Irmãos</p>
                 <p>Seg - Sex 08:00 às 18:00</p>
+            </div>
             </addres>
             <div class="footer-son" id="footer-redes-sociais">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>             
+                <a class="fab fa-linkedin-in" alt="Logo do Linkedin" href="https://www.linkedin.com/company/integrarjr" target="blank"></a>  
+                <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrarjr" target="blank"></a>
+                <a class="fab fa-instagram" alt="Logo do Instagram" href="https://www.instagram.com/integrarjr/" target="blank"></a>
             </div>
-            <div id="vazia"></div>
+            
             <div id="footer-media">
                 <div id="footer-logo-media">
-                <img src={% static "\images\logo_2.png" %} width="100px" height="100px"></img>
+                    <a href="#idCarrossel">
+                        <img src={% static "\images\logo_texto_vertical.png" %}  alt="Logo da Integrar" href="#idCarrossel">
+                    </a>
                 </div>
                 <div class="footer-son" id="footer-redes-sociais-media">
-                    <i class="fab fa-twitter"></i>  
-                    <i class="fab fa-facebook-f"></i>   
-                    <i class="fab fa-instagram"></i>   
-                    <h6>Made with <strong><i class="fas fa-code"></i></strong></strong> and ♥</h6>    
+                    <a class="fab fa-linkedin-in" alt="Logo do Linkedin" href="https://www.linkedin.com/company/integrarjr" target="blank"></a>  
+                    <a class="fab fa-facebook-f" alt="Logo do Facebook" href="https://pt-br.facebook.com/integrarjr" target="blank"></a>   
+                    <a class="fab fa-instagram" alt="Logo do Instagram" target="blank"></a>     
                 </div>
             </div>
         </span>
-        <div id="made">
-            <h6>Made with<img src={% static "icons\code.png" %}></img> and ♥</h6>
-        </div>
     </footer>
+    <div id="footer-citi">
+        <div id="footer-direitos">
+            Copyright <i class="far fa-copyright"></i> 2018 CITi
+            </div>
+
+        <div id="footer-made">
+            Made with
+                <i class="fas fa-code"></i> and
+                <i class="far fa-heart"></i> by
+                <a href="https://www.citi.org.br" target="blank">
+                    <img src="{% static "\images\citi-logo.png" %}">
+                </a>
+
+            
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static "slick/slick.min.js" %}"></script>
+
+    <script src={% static "js\main.js" %}></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5b4fb13ee21878736ba21f17/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
 </body> 
 </html>
