@@ -122,10 +122,7 @@ USE_TZ = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_URL = '/static/'
-STATIC_ROOT = ''
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 EMAIL_HOST = 'smtp.gmail.com' #Aqui irá a origem do email pra onde será enviado as mensagens
 EMAIL_HOST_USER = 'mensageiro.integrar@gmail.com' #Aqui estará o email do cliente
