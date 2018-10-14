@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+from decouple import config
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '40gh0p9u1vu2g66z^!^xl9cdm7g5o-7k2cm66kj)sg+1fxe06s'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -122,13 +122,13 @@ USE_TZ = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
 EMAIL_HOST = 'smtp.gmail.com' #Aqui irá a origem do email pra onde será enviado as mensagens
 EMAIL_HOST_USER = 'mensageiro.integrar@gmail.com' #Aqui estará o email do cliente
-EMAIL_HOST_PASSWORD = 'integrar123' #Aqui é a senha desse email
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') #Aqui é a senha desse email
 EMAIL_PORT = 587 
 EMAIL_USE_TLS = True
