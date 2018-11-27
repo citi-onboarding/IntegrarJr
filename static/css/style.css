@@ -175,15 +175,15 @@ body {
 }
 
 .carrossel-foto1 {
-    background-image: url(../images/carrossel-background1.jpg);
+    background-image: url(../images/carrossel-background1_low_res.jpg);
 }
 
 .carrossel-foto2 {
-    background-image: url(../images/carrossel-background2.jpg);
+    background-image: url(../images/carrossel-background2_low_res.jpg);
 }
 
 .carrossel-foto3 {
-    background-image: url(../images/carrossel-background3.jpg);
+    background-image: url(../images/carrossel-background3_low_res.jpg);
 }
 
 .carrossel-call__title {
@@ -405,6 +405,7 @@ body {
     height: 600px;
     background-color: #f1f1f1;
 }
+
 .Contato h4{
     margin: 0;
     padding-top: 80px;
@@ -755,7 +756,7 @@ footer p {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         position: absolute;
-        top: 10px;
+        top: 9px;
     }
     
     .change .bar2 {
@@ -766,7 +767,7 @@ footer p {
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         position: absolute;
-        top: 10px;
+        top: 9px;
     }        
     
     /*CARROSSEL RESPONSIVO*/
@@ -887,12 +888,14 @@ footer p {
         justify-content: center;
         width: 20%;
     }
-    input[type=text] {
+    .Contato input {
+        font-size: 16px;
         margin-top: 7px;
         margin-bottom: 7px;
         width: 220px; 
         height:20px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
         background-color: transparent;
         justify-content: center;
     }
@@ -903,11 +906,12 @@ footer p {
         color: #151414;
     }
     #id_meetContato {
+        font-size: 16px;
         width: 232px; 
-        height:30px;
+        height: 32px;
         padding-top: 5px;
-        padding-bottom: 10px;
-        padding-right: 20px;
+        padding-bottom: 5px;
+        padding-right: 10px;
         border-width: 1px;
     }
     option {
@@ -915,6 +919,7 @@ footer p {
         height:30px;
     }
     textarea {
+        font-size: 16px;
         width: 209px; 
         height:60px;
         padding-top: 12px;
@@ -927,7 +932,8 @@ footer p {
     button[type=submit] {
         width: 100px;
         margin: 1px;
-        font-size: 15px;
+        margin-top: 10px;
+        font-size: 16px;
         cursor: pointer;
     }
     #id_nameContato {
