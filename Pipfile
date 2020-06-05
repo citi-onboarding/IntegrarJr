@@ -23,7 +23,7 @@ virtualenv-clone = "==0.3.0"
 wrapt = "==1.10.11"
 gunicorn = "*"
 "psycopg2" = "*"
-Django = "==2.0.5"
+Django = "==2.2.13"
 whitenoise = "*"
 
 [dev-packages]
